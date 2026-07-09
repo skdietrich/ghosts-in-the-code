@@ -204,8 +204,8 @@
     witness: {
       label: 'FILE 01 · THE WITNESS',
       title: 'The wrong man for easy belief.',
-      copy: 'A professional skeptic, historian, and systems investigator becomes the witness. The site sells the book by making that contradiction instantly clear: before the testimony is accepted, the witness is audited.',
-      readout: ['signal confidence: narrative', 'reader hook: high', 'action: continue']
+      copy: 'A professional skeptic, historian, and systems investigator becomes the witness. Before the testimony is accepted, the witness is audited. A professional skeptic, historian, and systems investigator becomes part of the evidence.',
+      readout: ['signal confidence: narrative', 'reader path: clear', 'action: continue']
     },
     death: {
       label: 'FILE 02 · THE FIVE MINUTES',
@@ -222,7 +222,7 @@
     field: {
       label: 'FILE 11 · FIELD NIGHTS',
       title: 'The hotel floor that stopped taking guests.',
-      copy: 'The field-night material gives the site a cinematic location: a twenty-fourth floor, an empty corridor, solo controls, a protected source, and a reason to keep reading.',
+      copy: 'The field-night material gives the site a cinematic location: a twenty-fourth floor, an empty corridor, solo controls, a protected source, and the turn from investigation to search and rescue.',
       readout: ['floor: 24', 'method: solo', 'chorus removed']
     },
     machine: {
