@@ -157,3 +157,97 @@
     tab.addEventListener('click', () => activate(tab.dataset.previewTab));
   });
 })();
+
+
+// AI/archive landing-page enhancements. Static GitHub Pages only; no backend and no exposed API keys.
+(() => {
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const boot = document.querySelector('[data-boot]');
+  if (boot && !reducedMotion && !sessionStorage.getItem('gitcBootSeen')) {
+    window.setTimeout(() => {
+      boot.classList.add('done');
+      sessionStorage.setItem('gitcBootSeen', '1');
+    }, 3600);
+  } else if (boot) {
+    boot.classList.add('done');
+  }
+
+  const consoleData = {
+    witness: {
+      label: 'FILE 01 · THE WITNESS',
+      title: 'The wrong man for easy belief.',
+      copy: 'A professional skeptic, historian, and systems investigator becomes the witness. The site sells the book by making that contradiction instantly clear: before the testimony is accepted, the witness is audited.',
+      readout: ['signal confidence: narrative', 'reader hook: high', 'action: continue']
+    },
+    death: {
+      label: 'FILE 02 · THE FIVE MINUTES',
+      title: 'The body stops. The record continues.',
+      copy: 'The ambulance sequence gives the landing page its engine: pain vanishes, the body is below, and the narrator discovers that whatever he is did not end with the machinery.',
+      readout: ['threshold event', 'time window: five minutes', 'status: unresolved']
+    },
+    review: {
+      label: 'FILE 03 · THE REVIEW',
+      title: 'Not comfort. Accounting.',
+      copy: 'The life review turns the book away from soft inspirational territory. The witness is made to experience the cost of his own record from the other side of the transaction.',
+      readout: ['motive weighted', 'ledger active', 'comfort denied']
+    },
+    field: {
+      label: 'FILE 11 · FIELD NIGHTS',
+      title: 'The hotel floor that stopped taking guests.',
+      copy: 'The field-night material gives the site a cinematic location: a twenty-fourth floor, an empty corridor, solo controls, a protected source, and a reason to keep reading.',
+      readout: ['floor: 24', 'method: solo', 'chorus removed']
+    },
+    machine: {
+      label: 'FILE 06 · THE MACHINE',
+      title: 'The newest machine asks the oldest question.',
+      copy: 'AI grief technology is already rebuilding voices of the dead. The book asks what should be tested before synthetic presence becomes a product people trust.',
+      readout: ['voice risk: high', 'ethics: unresolved', 'human need: active']
+    }
+  };
+
+  const consoleBox = document.querySelector('[data-console]');
+  if (consoleBox) {
+    const tabs = Array.from(consoleBox.querySelectorAll('[data-console-tab]'));
+    const label = consoleBox.querySelector('[data-console-label]');
+    const title = consoleBox.querySelector('[data-console-title]');
+    const copy = consoleBox.querySelector('[data-console-copy]');
+    const readout = consoleBox.querySelector('.console-readout');
+    const activate = key => {
+      const item = consoleData[key] || consoleData.witness;
+      tabs.forEach(tab => {
+        const active = tab.dataset.consoleTab === key;
+        tab.classList.toggle('active', active);
+        tab.setAttribute('aria-selected', String(active));
+      });
+      if (label) label.textContent = item.label;
+      if (title) title.textContent = item.title;
+      if (copy) copy.textContent = item.copy;
+      if (readout) readout.innerHTML = item.readout.map(line => `<span>${line}</span>`).join('');
+    };
+    tabs.forEach(tab => tab.addEventListener('click', () => activate(tab.dataset.consoleTab)));
+  }
+
+  const askData = {
+    witness: ['QUERY · WITNESS', 'The witness is part of the evidence.', 'Ghosts in the Code does not ask the reader to trust an easy believer. It introduces a man trained to read systems, incentives, fraud, and rooms — then forces that man to become evidence against himself.'],
+    ambulance: ['QUERY · AMBULANCE', 'The threshold begins in a moving vehicle.', 'The death event is not staged like a comforting brochure. It begins with illness, misread symptoms, an emergency call, an open door, and a body that becomes something the witness is watching from above.'],
+    chapter11: ['QUERY · CHAPTER 11', 'The book becomes fieldwork.', 'Chapter 11 gives readers a haunted location and a method: the Magnolia Hotel, a floor held out of inventory, a solo investigator, and a protected source with access. It turns atmosphere into procedure.'],
+    ai: ['QUERY · AI AND THE DEAD', 'The machines learned to answer grief.', 'The book reaches the present moment: companies can rebuild a voice, simulate a personality, and sell an echo back to the living. The old question of contact now has a product team.'],
+    proof: ['QUERY · PROOF OR WARNING', 'The answer is the record.', 'The site should not promise easy proof. It should promise a disciplined record: testimony, empty nights, field controls, mediumship under limits, and the ethical warning that imitation is not the same as contact.']
+  };
+  const ask = document.querySelector('[data-ask-archive]');
+  if (ask) {
+    const buttons = Array.from(ask.querySelectorAll('[data-question]'));
+    const label = ask.querySelector('[data-ask-label]');
+    const title = ask.querySelector('[data-ask-title]');
+    const copy = ask.querySelector('[data-ask-copy]');
+    const activate = key => {
+      const item = askData[key] || askData.witness;
+      buttons.forEach(button => button.classList.toggle('active', button.dataset.question === key));
+      if (label) label.textContent = item[0];
+      if (title) title.textContent = item[1];
+      if (copy) copy.textContent = item[2];
+    };
+    buttons.forEach(button => button.addEventListener('click', () => activate(button.dataset.question)));
+  }
+})();

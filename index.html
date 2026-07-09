@@ -22,11 +22,25 @@
   <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png" />
   <link rel="apple-touch-icon" href="assets/icon-192.png" />
   <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="stylesheet" href="styles.css?v=readerpreview1" />
+  <link rel="stylesheet" href="styles.css?v=aihybrid1" />
 </head>
 <body>
   <canvas id="signal-field" aria-hidden="true"></canvas>
   <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="boot-overlay" data-boot aria-hidden="true">
+    <div class="boot-card">
+      <p class="boot-kicker">Ghosts in the Code</p>
+      <div class="boot-lines" aria-label="Opening archive sequence">
+        <span>INITIALIZING WITNESS ARCHIVE</span>
+        <span>LOADING CHAPTER 1: THE MAN I WAS</span>
+        <span>LOADING CHAPTER 11: FIELD NIGHTS</span>
+        <span>CHECKING TESTIMONY AGAINST THE MACHINE</span>
+        <span>ARCHIVE OPEN</span>
+      </div>
+      <div class="boot-bar"><i></i></div>
+    </div>
+  </div>
 
   <header class="site-header" data-elevate>
     <a class="brand" href="#top" aria-label="Ghosts in the Code home">
@@ -36,8 +50,10 @@
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
       <a href="#book">Book</a>
+      <a href="#archive">Archive</a>
       <a href="#story">Story</a>
       <a href="#previews">Previews</a>
+      <a href="#ask-archive">Ask</a>
       <a href="#authors">Authors</a>
       <a href="#media">Media</a>
       <a class="nav-cta" href="#updates">Updates</a>
@@ -47,18 +63,33 @@
   <main id="main">
     <section id="top" class="hero section-pad">
       <div class="hero-bg" aria-hidden="true"></div>
+      <div class="signal-fragments" aria-hidden="true">
+        <span>testimony detected</span>
+        <span>boundary event logged</span>
+        <span>witness reliability: under audit</span>
+        <span>voice reconstruction risk: high</span>
+      </div>
       <div class="container hero-grid">
         <div class="hero-copy reveal">
           <p class="kicker">Official book site</p>
           <h1>Ghosts in the Code</h1>
           <p class="tagline">What would you give for a chance for your soul to continue...</p>
           <p class="hero-subtitle">A true account of death, disclosure, evidential mediumship, and the machines now learning to speak in the voices of the dead.</p>
+          <div class="hero-status" aria-label="Archive status">
+            <span>Witness file open</span>
+            <span>Field records logged</span>
+            <span>Machine question active</span>
+          </div>
+          <svg class="hero-ekg" viewBox="0 0 900 90" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0,45 L115,45 L135,45 L144,17 L154,73 L163,38 L174,45 L370,45 L386,45 L685,45 L704,45 L713,14 L724,76 L734,36 L746,45 L900,45" fill="none" stroke="currentColor" stroke-width="1.7" />
+          </svg>
           <p class="byline">By <strong>Dr. Stephen Dietrich-Kolokouris</strong><br />feat. <strong>Cindy Kaza</strong></p>
           <div class="cta-row">
             <a class="button primary" href="#updates">Get book updates</a>
+            <a class="button secondary" href="#archive">Open the archive</a>
             <a class="button secondary" href="#previews">Read previews</a>
           </div>
-          <p class="microcopy">No maze. No overbuilt archive. Just the book, the people, the argument, and the evidence path.</p>
+          <p class="microcopy">A cinematic AI/archive landing page, but still built for readers first: clear path, fast answers, no maze.</p>
         </div>
 
         <div class="cover-stage reveal" data-tilt-card>
@@ -68,6 +99,66 @@
             <img src="assets/cover.jpg" srcset="assets/responsive/cover-320.jpg 320w, assets/responsive/cover-480.jpg 480w, assets/responsive/cover-720.jpg 720w, assets/responsive/cover-960.jpg 960w, assets/responsive/cover-1200.jpg 1200w, assets/responsive/cover-1365.jpg 1365w" sizes="(max-width: 520px) 68vw, (max-width: 900px) 270px, (min-width: 2560px) 460px, 390px" alt="Ghosts in the Code book cover" width="1100" height="1650" decoding="async" fetchpriority="high" />
           </picture>
         </div>
+      </div>
+    </section>
+
+
+
+    <section id="archive" class="section-pad archive-section">
+      <div class="container archive-grid">
+        <div class="section-intro reveal">
+          <p class="kicker">The living archive</p>
+          <h2>The cool case-file feeling, rebuilt for humans.</h2>
+          <p>The earlier site had the right mood: file numbers, evidence panels, the pulse of a machine watching the testimony. This version keeps that atmosphere but gives visitors an obvious path through the book.</p>
+          <div class="archive-meta" aria-label="Archive facts">
+            <span>FILE 01 · The witness</span>
+            <span>FILE 02 · The five minutes</span>
+            <span>FILE 11 · Field nights</span>
+          </div>
+        </div>
+
+        <div class="console reveal" data-console>
+          <div class="console-header">
+            <span class="console-dot"></span>
+            <span>AI / Evidence Console</span>
+            <span class="console-state">reader mode</span>
+          </div>
+          <div class="console-tabs" role="tablist" aria-label="Evidence console tabs">
+            <button class="console-tab active" type="button" role="tab" aria-selected="true" data-console-tab="witness">The witness</button>
+            <button class="console-tab" type="button" role="tab" aria-selected="false" data-console-tab="death">Death event</button>
+            <button class="console-tab" type="button" role="tab" aria-selected="false" data-console-tab="review">The review</button>
+            <button class="console-tab" type="button" role="tab" aria-selected="false" data-console-tab="field">The hotel</button>
+            <button class="console-tab" type="button" role="tab" aria-selected="false" data-console-tab="machine">The machine</button>
+          </div>
+          <div class="console-screen" aria-live="polite">
+            <p class="console-label" data-console-label>FILE 01 · THE WITNESS</p>
+            <h3 data-console-title>The wrong man for easy belief.</h3>
+            <p data-console-copy>A professional skeptic, historian, and systems investigator becomes the witness. The site sells the book by making that contradiction instantly clear: before the testimony is accepted, the witness is audited.</p>
+            <div class="console-readout">
+              <span>signal confidence: narrative</span>
+              <span>reader hook: high</span>
+              <span>action: continue</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container file-cards" aria-label="Reader file cards">
+        <article class="file-card reveal">
+          <span class="file-num">01</span>
+          <h3>Start with the man</h3>
+          <p>Chapter 1 works because it does not begin with a ghost. It begins with the rule that sealed a child and made the later death review unbearable.</p>
+        </article>
+        <article class="file-card reveal">
+          <span class="file-num">02</span>
+          <h3>Follow the death</h3>
+          <p>The ambulance is the threshold: pain stops, the body remains below, and the witness becomes a record from the wrong side of the boundary.</p>
+        </article>
+        <article class="file-card reveal">
+          <span class="file-num">11</span>
+          <h3>Enter the field night</h3>
+          <p>The Magnolia floor gives the site a cinematic location: a downtown hotel, an empty corridor, a protected source, and a method designed to resist suggestion.</p>
+        </article>
       </div>
     </section>
 
@@ -128,6 +219,14 @@
             <h3>The machine age of ghosts</h3>
             <p>When synthetic voices of the dead become products, the old paranormal question becomes a new technological emergency.</p>
           </article>
+        </div>
+
+        <div class="reader-route reveal" aria-label="Five-step reader route">
+          <div><strong>Start with the man</strong><span>the witness is audited</span></div>
+          <div><strong>Follow the death</strong><span>the five minutes open</span></div>
+          <div><strong>Enter the review</strong><span>the ledger answers back</span></div>
+          <div><strong>Test the field</strong><span>the floor comes alive</span></div>
+          <div><strong>Meet the machine</strong><span>AI imitates the dead</span></div>
         </div>
       </div>
     </section>
@@ -223,9 +322,35 @@
       </div>
     </section>
 
+
+
+    <section id="ask-archive" class="section-pad ask-section">
+      <div class="container split">
+        <div class="section-intro reveal">
+          <p class="kicker">Ask the archive</p>
+          <h2>An AI-feeling guide without a backend or gimmick.</h2>
+          <p>This is a guided reader console, not a fake chatbot. Visitors can ask the questions they already have, get a clean answer, and move deeper into the book without getting lost.</p>
+        </div>
+        <div class="ask-console reveal" data-ask-archive>
+          <div class="ask-options" role="list" aria-label="Archive questions">
+            <button class="ask-option active" type="button" data-question="witness">Who is the witness?</button>
+            <button class="ask-option" type="button" data-question="ambulance">What happened in the ambulance?</button>
+            <button class="ask-option" type="button" data-question="chapter11">Why does Chapter 11 matter?</button>
+            <button class="ask-option" type="button" data-question="ai">What does AI have to do with the dead?</button>
+            <button class="ask-option" type="button" data-question="proof">Is this proof or a warning?</button>
+          </div>
+          <div class="ask-answer">
+            <p class="console-label" data-ask-label>QUERY · WITNESS</p>
+            <h3 data-ask-title>The witness is part of the evidence.</h3>
+            <p data-ask-copy>Ghosts in the Code does not ask the reader to trust an easy believer. It introduces a man trained to read systems, incentives, fraud, and rooms — then forces that man to become evidence against himself.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="authors" class="section-pad authors-section">
       <div class="container section-intro centered reveal">
-        <p class="kicker">The people</p>
+        <p class="kicker">Identity files</p>
         <h2>The witness and the medium.</h2>
       </div>
 
@@ -236,7 +361,7 @@
             <img src="assets/stephen.jpg" srcset="assets/responsive/stephen-360.jpg 360w, assets/responsive/stephen-540.jpg 540w, assets/responsive/stephen-720.jpg 720w, assets/responsive/stephen-900.jpg 900w, assets/responsive/stephen-1200.jpg 1200w, assets/responsive/stephen-1600.jpg 1600w" sizes="(max-width: 900px) calc(100vw - 32px), (max-width: 1180px) 280px, (min-width: 2560px) 260px, 230px" alt="Portrait of Dr. Stephen Dietrich-Kolokouris" width="1160" height="1355" loading="lazy" decoding="async" />
           </picture>
           <div class="author-copy">
-            <p class="card-label">The author behind the signal</p>
+            <p class="card-label">AUTHOR FILE 01 · The witness</p>
             <h3>Dr. Stephen Dietrich-Kolokouris</h3>
             <p>Historian, author, and investigator of claims where memory, testimony, evidence, and the unexplained collide. In Ghosts in the Code, he brings the discipline of historical inquiry and systems thinking to the most personal question imaginable.</p>
           </div>
@@ -248,7 +373,7 @@
             <img src="assets/cindy.jpg" srcset="assets/responsive/cindy-240.jpg 240w, assets/responsive/cindy-320.jpg 320w, assets/responsive/cindy-362.jpg 362w" sizes="(max-width: 900px) min(362px, calc(100vw - 32px)), (max-width: 1180px) 280px, 230px" alt="Portrait of Cindy Kaza" width="362" height="423" loading="lazy" decoding="async" />
           </picture>
           <div class="author-copy">
-            <p class="card-label">Featured in the book</p>
+            <p class="card-label">AUTHOR FILE 02 · The medium</p>
             <h3>Cindy Kaza</h3>
             <p>Cindy Kaza is featured in the project as a central mediumship presence in the story. The site presents her role cleanly and respectfully, without overexplaining the book before readers arrive there.</p>
           </div>
@@ -312,7 +437,9 @@
       <div>
         <p class="footer-label">Quick links</p>
         <a href="#book">Book</a>
+        <a href="#archive">Archive</a>
         <a href="#previews">Previews</a>
+        <a href="#ask-archive">Ask the Archive</a>
         <a href="#authors">Authors</a>
         <a href="#media">Media</a>
         <a href="#updates">Updates</a>
@@ -324,6 +451,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=readerpreview1"></script>
+  <script src="script.js?v=aihybrid1"></script>
 </body>
 </html>
