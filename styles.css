@@ -127,3 +127,104 @@ h3{font-size:clamp(1.25rem, 1.8vw, 2.15rem);letter-spacing:.015em}
   .cover-stage{width:min(230px,60vw)}
   .cover-stage img{max-height:46svh}
 }
+
+
+/* Author image scale hotfix: prevents Stephen/Cindy portrait cards from becoming oversized on 1900x1200, 4K, and TV desktop layouts. */
+@media (min-width:901px){
+  .authors-section{
+    padding-top:clamp(70px,6vw,120px);
+    padding-bottom:clamp(70px,6vw,120px);
+  }
+  .authors-section .centered{
+    margin-bottom:clamp(26px,3vw,42px);
+  }
+  .author-grid{
+    width:min(1180px, calc(100% - 72px));
+    max-width:1180px;
+    margin-left:auto;
+    margin-right:auto;
+    align-items:stretch;
+    gap:18px;
+  }
+  .author-card{
+    display:grid;
+    grid-template-columns:minmax(165px,36%) minmax(0,1fr);
+    align-items:stretch;
+    min-height:0;
+  }
+  .author-card picture,
+  .author-card:nth-child(2) picture{
+    aspect-ratio:auto;
+    height:100%;
+    min-height:250px;
+    max-height:330px;
+  }
+  .author-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+  .author-card:first-child img{
+    object-position:center 18%;
+  }
+  .author-card:nth-child(2) img{
+    object-position:center 12%;
+  }
+  .author-copy{
+    padding:clamp(22px,1.8vw,30px);
+  }
+  .author-copy h3{
+    font-size:clamp(1.25rem,1.25vw,1.75rem);
+  }
+  .author-copy p{
+    font-size:clamp(.9rem,.85vw,1rem);
+    line-height:1.55;
+  }
+}
+
+@media (min-width:901px) and (max-width:1180px){
+  .author-grid{
+    grid-template-columns:1fr;
+    width:min(860px, calc(100% - 48px));
+  }
+  .author-card{
+    grid-template-columns:minmax(190px,32%) minmax(0,1fr);
+  }
+  .author-card picture,
+  .author-card:nth-child(2) picture{
+    max-height:300px;
+  }
+}
+
+@media (min-width:1600px){
+  .author-grid{
+    max-width:1180px;
+  }
+  .author-card picture,
+  .author-card:nth-child(2) picture{
+    max-height:320px;
+  }
+}
+
+@media (min-width:2200px){
+  .author-grid{
+    max-width:1240px;
+  }
+  .author-card{
+    grid-template-columns:minmax(180px,34%) minmax(0,1fr);
+  }
+  .author-card picture,
+  .author-card:nth-child(2) picture{
+    max-height:330px;
+  }
+}
+
+@media (min-width:3200px){
+  .author-grid{
+    max-width:1280px;
+  }
+  .author-card picture,
+  .author-card:nth-child(2) picture{
+    max-height:340px;
+  }
+}
