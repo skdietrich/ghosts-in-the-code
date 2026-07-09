@@ -1,0 +1,14 @@
+{
+  "name": "Ghosts in the Code",
+  "short_name": "GITC",
+  "description": "Official website for Ghosts in the Code by Dr. Stephen Dietrich-Kolokouris feat. Cindy Kaza.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#05070b",
+  "theme_color": "#05070b",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
