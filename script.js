@@ -131,3 +131,29 @@
     if (!reduced) requestAnimationFrame(draw);
   }
 })();
+
+
+// Chapter preview tabs: progressive enhancement, no build system required.
+(() => {
+  const tabs = Array.from(document.querySelectorAll('[data-preview-tab]'));
+  const panels = Array.from(document.querySelectorAll('[data-preview-panel]'));
+  if (!tabs.length || !panels.length) return;
+
+  const activate = (key) => {
+    tabs.forEach((tab) => {
+      const isActive = tab.dataset.previewTab === key;
+      tab.classList.toggle('active', isActive);
+      tab.setAttribute('aria-selected', String(isActive));
+    });
+    panels.forEach((panel) => {
+      const isActive = panel.dataset.previewPanel === key;
+      panel.classList.toggle('active', isActive);
+      if (isActive) panel.removeAttribute('hidden');
+      else panel.setAttribute('hidden', '');
+    });
+  };
+
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', () => activate(tab.dataset.previewTab));
+  });
+})();

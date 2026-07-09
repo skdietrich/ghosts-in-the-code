@@ -22,7 +22,7 @@
   <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png" />
   <link rel="apple-touch-icon" href="assets/icon-192.png" />
   <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="stylesheet" href="styles.css?v=authorfit1" />
+  <link rel="stylesheet" href="styles.css?v=readerpreview1" />
 </head>
 <body>
   <canvas id="signal-field" aria-hidden="true"></canvas>
@@ -37,6 +37,7 @@
     <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
       <a href="#book">Book</a>
       <a href="#story">Story</a>
+      <a href="#previews">Previews</a>
       <a href="#authors">Authors</a>
       <a href="#media">Media</a>
       <a class="nav-cta" href="#updates">Updates</a>
@@ -55,7 +56,7 @@
           <p class="byline">By <strong>Dr. Stephen Dietrich-Kolokouris</strong><br />feat. <strong>Cindy Kaza</strong></p>
           <div class="cta-row">
             <a class="button primary" href="#updates">Get book updates</a>
-            <a class="button secondary" href="#book">Explore the book</a>
+            <a class="button secondary" href="#previews">Read previews</a>
           </div>
           <p class="microcopy">No maze. No overbuilt archive. Just the book, the people, the argument, and the evidence path.</p>
         </div>
@@ -107,8 +108,8 @@
       <div class="container">
         <div class="section-intro centered reveal">
           <p class="kicker">Reader path</p>
-          <h2>Simple for visitors. Strong enough for the subject.</h2>
-          <p>This page turns the older “living archive” idea into a cleaner visitor journey. The mood stays high-tech and haunted, but the navigation is direct.</p>
+          <h2>From confession to field night to the machine age of ghosts.</h2>
+          <p>The site now gives visitors a stronger taste of the manuscript: not just the premise, but the voice, the stakes, and the haunted evidence path that makes the book hard to put down.</p>
         </div>
 
         <div class="pathway" aria-label="Book themes">
@@ -127,6 +128,97 @@
             <h3>The machine age of ghosts</h3>
             <p>When synthetic voices of the dead become products, the old paranormal question becomes a new technological emergency.</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="previews" class="section-pad preview-section">
+      <div class="container section-intro centered reveal">
+        <p class="kicker">Read the signal</p>
+        <h2>Two chapter previews built to pull readers in.</h2>
+        <p>Chapter 1 gives readers the witness before the testimony. Chapter 11 gives them the field night: the sealed floor, the solo method, the pressure in the corner, and the moment investigation turns into search and rescue.</p>
+      </div>
+
+      <div class="container reader-magnets" aria-label="Why readers keep reading">
+        <article class="magnet-card reveal">
+          <span class="card-label">Hook 01</span>
+          <h3>The wrong witness</h3>
+          <p>A professional skeptic and systems man does not arrive asking to be comforted. He arrives as evidence under audit.</p>
+        </article>
+        <article class="magnet-card reveal">
+          <span class="card-label">Hook 02</span>
+          <h3>The inherited rule</h3>
+          <p>The first emotional mystery is not a ghost. It is the sentence that sealed the narrator for fifty years: emotion is weakness.</p>
+        </article>
+        <article class="magnet-card reveal">
+          <span class="card-label">Hook 03</span>
+          <h3>The twenty-fourth floor</h3>
+          <p>A hotel floor taken out of inventory turns the book from testimony into fieldwork.</p>
+        </article>
+        <article class="magnet-card reveal">
+          <span class="card-label">Hook 04</span>
+          <h3>The rescue frame</h3>
+          <p>The paranormal is not sold as spectacle. It becomes a moral question: what if some hauntings are people waiting for help?</p>
+        </article>
+      </div>
+
+      <div class="container preview-shell reveal">
+        <div class="preview-tabs" role="tablist" aria-label="Chapter preview tabs">
+          <button class="preview-tab active" type="button" role="tab" aria-selected="true" aria-controls="chapter-one-panel" id="chapter-one-tab" data-preview-tab="chapter-one">Chapter 1</button>
+          <button class="preview-tab" type="button" role="tab" aria-selected="false" aria-controls="chapter-eleven-panel" id="chapter-eleven-tab" data-preview-tab="chapter-eleven">Chapter 11</button>
+        </div>
+
+        <div class="preview-panel active" id="chapter-one-panel" role="tabpanel" aria-labelledby="chapter-one-tab" data-preview-panel="chapter-one">
+          <div class="preview-grid">
+            <div class="preview-copy">
+              <p class="card-label">Chapter 1 preview</p>
+              <h3>The Man I Was</h3>
+              <p class="preview-lede">This is the chapter that sells the narrator. It starts in history, moves into childhood, then reveals the emotional shutdown that makes the later life review devastating instead of sentimental.</p>
+              <div class="pull-quote">“The cause had failed. The discipline survived.”</div>
+              <p>The reader magnet here is the reversal: the book is not asking readers to trust an easy believer. It introduces a man who was sealed, strategic, and dangerous to others, then makes the death event matter because that man is forced to become a witness against himself.</p>
+            </div>
+            <div class="sample-card">
+              <p class="card-label">Selected sample</p>
+              <h4>The inherited commandment</h4>
+              <p>My mother was born in 1941, inside the machinery of the Third Reich, to parents who believed in it.</p>
+              <p>The cause had failed. The discipline survived.</p>
+              <p>Ideas do not always die when their governments do. Sometimes they shrink down into kitchen rules, into the tone of a father’s voice, into the way a mother stiffens when a child cries. Sometimes history stops wearing a uniform and learns to live in the body.</p>
+              <p>Out of that house, out of that decade, out of that inheritance, my mother carried one polished sentence into the rest of her life:</p>
+              <p><strong>Emotion is weakness, and weakness gets used.</strong></p>
+              <details class="sample-more">
+                <summary>Open the deeper hook</summary>
+                <p>The crying stopped. Then something underneath the crying stopped too.</p>
+                <p>You cannot close the door on grief and leave joy moving freely through the house. Wonder goes in with it. Awe goes in with it. Love waits outside for a while, then stops knocking.</p>
+                <p>The question is not whether a man like that deserved a second chance. He did not. The question is what it means that he got one anyway.</p>
+              </details>
+            </div>
+          </div>
+        </div>
+
+        <div class="preview-panel" id="chapter-eleven-panel" role="tabpanel" aria-labelledby="chapter-eleven-tab" data-preview-panel="chapter-eleven" hidden>
+          <div class="preview-grid reverse-preview">
+            <div class="preview-copy">
+              <p class="card-label">Chapter 11 preview</p>
+              <h3>Field Nights</h3>
+              <p class="preview-lede">This is the chapter that makes the website feel bigger. It gives readers a location, a method, a mystery, and a reason the paranormal material is not being treated like entertainment.</p>
+              <div class="pull-quote">“Investigation is the wrong word. Search and rescue.”</div>
+              <p>The draw is cinematic but disciplined: a downtown Dallas hotel, a floor removed from booking, solo investigation rules, an unnamed protected source, and a room where the past still feels physically present.</p>
+            </div>
+            <div class="sample-card">
+              <p class="card-label">Selected sample</p>
+              <h4>The twenty-fourth floor</h4>
+              <p>The Magnolia Hotel took a floor out of inventory.</p>
+              <p>Not closed for renovation. Not unfinished. The twenty-fourth floor is furnished and maintained like the floors above and below it. Housekeeping still goes there. The booking system does not.</p>
+              <p>Things moved. Objects appeared where no one had left them. Other things disappeared. Guests and staff heard noises with no source. Items fell from surfaces in empty rooms. More than one person reported the same feeling: being watched.</p>
+              <p>A full floor of a downtown Dallas hotel, held out of inventory after enough strange reports that someone decided the lost revenue was cheaper than whatever kept happening upstairs.</p>
+              <details class="sample-more">
+                <summary>Open the field-night hook</summary>
+                <p>A hotel floor in perfect readiness, with nobody on it, has a silence all its own. Doors in their ranks. Beds made behind them for guests who never come.</p>
+                <p>The room was occupied. I registered it the way you register someone in your peripheral vision who was not there when you sat down.</p>
+                <p>There are people in these buildings. Not attractions. Not content. People stranded on the wrong side of their own fear, some of them for lifetimes, waiting for someone to come through the door who knows the territory.</p>
+              </details>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -176,6 +268,7 @@
             <span>Evidence protocols</span>
             <span>Mediumship testing</span>
             <span>Paranormal ethics</span>
+            <span>Chapter previews</span>
             <span>History of contact technology</span>
           </div>
         </div>
@@ -219,6 +312,7 @@
       <div>
         <p class="footer-label">Quick links</p>
         <a href="#book">Book</a>
+        <a href="#previews">Previews</a>
         <a href="#authors">Authors</a>
         <a href="#media">Media</a>
         <a href="#updates">Updates</a>
@@ -230,6 +324,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=readerpreview1"></script>
 </body>
 </html>
