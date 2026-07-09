@@ -139,22 +139,49 @@
   const panels = Array.from(document.querySelectorAll('[data-preview-panel]'));
   if (!tabs.length || !panels.length) return;
 
-  const activate = (key) => {
+  const activate = (key, shouldScroll = false) => {
+    let activePanel = null;
+
     tabs.forEach((tab) => {
       const isActive = tab.dataset.previewTab === key;
       tab.classList.toggle('active', isActive);
       tab.setAttribute('aria-selected', String(isActive));
+      tab.tabIndex = isActive ? 0 : -1;
     });
+
     panels.forEach((panel) => {
       const isActive = panel.dataset.previewPanel === key;
       panel.classList.toggle('active', isActive);
-      if (isActive) panel.removeAttribute('hidden');
-      else panel.setAttribute('hidden', '');
+      if (isActive) {
+        panel.removeAttribute('hidden');
+        activePanel = panel;
+      } else {
+        panel.setAttribute('hidden', '');
+      }
     });
+
+    if (shouldScroll && activePanel) {
+      window.setTimeout(() => {
+        activePanel.scrollIntoView({
+          behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+          block: 'start'
+        });
+      }, 60);
+    }
   };
 
   tabs.forEach((tab) => {
-    tab.addEventListener('click', () => activate(tab.dataset.previewTab));
+    tab.addEventListener('click', () => activate(tab.dataset.previewTab, true));
+    tab.addEventListener('keydown', (event) => {
+      const index = tabs.indexOf(tab);
+      if (event.key !== 'ArrowRight' && event.key !== 'ArrowLeft') return;
+      event.preventDefault();
+      const nextIndex = event.key === 'ArrowRight'
+        ? (index + 1) % tabs.length
+        : (index - 1 + tabs.length) % tabs.length;
+      tabs[nextIndex].focus();
+      activate(tabs[nextIndex].dataset.previewTab, true);
+    });
   });
 })();
 
