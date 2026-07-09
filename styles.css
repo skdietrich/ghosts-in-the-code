@@ -442,7 +442,7 @@ h3{font-size:clamp(1.25rem, 1.8vw, 2.15rem);letter-spacing:.015em}
 }
 
 
-/* AI/author hybrid layer: imports the cool dossier feel from the earlier site without rebuilding in Astro/React. */
+/* AI/author hybrid layer. */
 .boot-overlay{
   position:fixed;
   inset:0;

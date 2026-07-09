@@ -149,7 +149,7 @@ Reader email: ${readerEmail || '[not provided]'}`);
 })();
 
 
-// Chapter preview tabs: progressive enhancement, no build system required.
+// Chapter preview tabs.
 (() => {
   const tabs = Array.from(document.querySelectorAll('[data-preview-tab]'));
   const panels = Array.from(document.querySelectorAll('[data-preview-panel]'));
@@ -202,7 +202,7 @@ Reader email: ${readerEmail || '[not provided]'}`);
 })();
 
 
-// AI/archive landing-page enhancements. Static GitHub Pages only; no backend and no exposed API keys.
+// AI/archive landing-page enhancements.
 (() => {
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -238,7 +238,7 @@ Reader email: ${readerEmail || '[not provided]'}`);
     field: {
       label: 'FILE 11 · FIELD NIGHTS',
       title: 'The hotel floor that stopped taking guests.',
-      copy: 'The field-night material gives the site a cinematic location: a twenty-fourth floor, an empty corridor, solo controls, a protected source, and the turn from investigation to search and rescue.',
+      copy: 'The field-night material gives the investigation a physical place: a twenty-fourth floor, an empty corridor, solo controls, a protected source, and the turn from investigation to search and rescue.',
       readout: ['floor: 24', 'method: solo', 'chorus removed']
     },
     machine: {
@@ -276,7 +276,7 @@ Reader email: ${readerEmail || '[not provided]'}`);
     ambulance: ['QUERY · AMBULANCE', 'The threshold begins in a moving vehicle.', 'The death event is not staged like a comforting brochure. It begins with illness, misread symptoms, an emergency call, an open door, and a body that becomes something the witness is watching from above.'],
     chapter11: ['QUERY · CHAPTER 11', 'The book becomes fieldwork.', 'Chapter 11 gives readers a haunted location and a method: the Magnolia Hotel, a floor held out of inventory, a solo investigator, and a protected source with access. It turns atmosphere into procedure.'],
     ai: ['QUERY · AI AND THE DEAD', 'The machines learned to answer grief.', 'The book reaches the present moment: companies can rebuild a voice, simulate a personality, and sell an echo back to the living. The old question of contact now has a product team.'],
-    proof: ['QUERY · PROOF OR WARNING', 'The answer is the record.', 'The site should not promise easy proof. It should promise a disciplined record: testimony, empty nights, field controls, mediumship under limits, and the ethical warning that imitation is not the same as contact.']
+    proof: ['QUERY · PROOF OR WARNING', 'The answer is the record.', 'The answer is disciplined record: testimony, empty nights, field controls, mediumship under limits, and the ethical warning that imitation is not the same as contact.']
   };
   const ask = document.querySelector('[data-ask-archive]');
   if (ask) {
