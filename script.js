@@ -60,13 +60,29 @@
     tilt.parentElement.addEventListener('mouseleave', reset);
   }
 
-  const demoForm = document.querySelector('[data-demo-form]');
+  const mailtoForm = document.querySelector('[data-mailto-form]');
   const formNote = document.querySelector('[data-form-note]');
-  if (demoForm && formNote) {
-    demoForm.addEventListener('submit', event => {
+  if (mailtoForm && formNote) {
+    mailtoForm.addEventListener('submit', event => {
       event.preventDefault();
-      formNote.textContent = 'Signup form placeholder — connect this to your email provider before publishing.';
+      const emailInput = mailtoForm.querySelector('input[type="email"]');
+      const readerEmail = emailInput ? emailInput.value.trim() : '';
+      const subject = encodeURIComponent('Ghosts in the Code updates');
+      const body = encodeURIComponent(`Please add me to the Ghosts in the Code update list.
+
+Reader email: ${readerEmail || '[not provided]'}`);
+      window.location.href = `mailto:gitc@wolframtek.de?subject=${subject}&body=${body}`;
+      formNote.textContent = 'Opening your email app. Send the message there to request updates.';
     });
+  }
+
+  const backToTop = document.querySelector('[data-back-to-top]');
+  if (backToTop) {
+    const toggleBackToTop = () => {
+      backToTop.classList.toggle('visible', window.scrollY > 650);
+    };
+    toggleBackToTop();
+    window.addEventListener('scroll', toggleBackToTop, { passive: true });
   }
 
   const canvas = document.getElementById('signal-field');

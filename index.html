@@ -22,7 +22,7 @@
   <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png" />
   <link rel="apple-touch-icon" href="assets/icon-192.png" />
   <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="stylesheet" href="styles.css?v=readerclarity1" />
+  <link rel="stylesheet" href="styles.css?v=buttons1" />
 </head>
 <body>
   <canvas id="signal-field" aria-hidden="true"></canvas>
@@ -517,6 +517,7 @@
           <p><strong>Short description:</strong> Ghosts in the Code is a true account of death, life review, paranormal field work, evidential mediumship, and the machines now learning to imitate the dead.</p>
           <div class="cta-row left">
             <a class="button primary" href="#updates">Request updates</a>
+            <a class="button secondary" href="mailto:gitc@wolframtek.de?subject=Ghosts%20in%20the%20Code%20media%20request">Email media contact</a>
             <a class="button secondary" href="assets/og-image.jpg" download>Download promo image</a>
           </div>
         </div>
@@ -568,13 +569,16 @@
           <h2>Book updates, media, and launch notices.</h2>
           <p>Join the update list for publication news, previews, media appearances, and launch announcements.</p>
         </div>
-        <form class="signup-form" action="#" method="post" data-demo-form>
+        <form class="signup-form" action="mailto:gitc@wolframtek.de" method="post" enctype="text/plain" data-mailto-form>
           <label for="email">Email address</label>
           <div class="form-row">
             <input id="email" name="email" type="email" placeholder="you@example.com" required />
             <button class="button primary" type="submit">Notify me</button>
           </div>
-          <p class="form-note" data-form-note>Signup connection pending.</p>
+          <div class="contact-row">
+            <a class="button secondary" href="mailto:gitc@wolframtek.de?subject=Ghosts%20in%20the%20Code%20contact">Email directly</a>
+          </div>
+          <p class="form-note" data-form-note>This opens your email app and sends the request to <a href="mailto:gitc@wolframtek.de?subject=Ghosts%20in%20the%20Code%20updates">gitc@wolframtek.de</a>.</p>
         </form>
       </div>
     </section>
@@ -585,6 +589,7 @@
       <div>
         <p class="footer-title">Ghosts in the Code</p>
         <p>By Dr. Stephen Dietrich-Kolokouris feat. Cindy Kaza.</p>
+        <p><a href="mailto:gitc@wolframtek.de?subject=Ghosts%20in%20the%20Code%20contact">gitc@wolframtek.de</a></p>
       </div>
       <div>
         <p class="footer-label">Quick links</p>
@@ -598,6 +603,8 @@
         <a href="#media">Media</a>
         <a href="#faq">FAQ</a>
         <a href="#updates">Updates</a>
+        <a href="mailto:gitc@wolframtek.de?subject=Ghosts%20in%20the%20Code%20contact">Contact</a>
+        <a href="#top">Back to top</a>
       </div>
       <div>
         <p class="footer-label">Safety note</p>
@@ -606,6 +613,7 @@
     </div>
   </footer>
 
-  <script src="script.js?v=readerclarity1"></script>
+  <a class="back-to-top" href="#top" aria-label="Back to top" data-back-to-top>Top</a>
+  <script src="script.js?v=buttons1"></script>
 </body>
 </html>

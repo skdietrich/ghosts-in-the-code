@@ -524,3 +524,14 @@ h3{font-size:clamp(1.25rem, 1.8vw, 2.15rem);letter-spacing:.015em}
 @media (max-width:1180px){.clarity-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.field-dossier,.faq-grid{grid-template-columns:1fr}.preview-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:700px){.clarity-grid{grid-template-columns:1fr}.preview-tabs{grid-template-columns:1fr 1fr}.field-dossier{gap:10px}.faq-grid{grid-template-columns:1fr}}
 @media (max-width:430px){.preview-tabs{grid-template-columns:1fr}.clarity-item,.audit-file,.field-dossier,.ai-points article,.faq-item{padding:20px}}
+
+
+/* Contact and navigation polish */
+.contact-row{margin-top:12px;display:flex;justify-content:flex-start}
+.contact-row .button{min-height:44px}
+.form-note a{color:var(--text);text-decoration:underline;text-decoration-color:var(--gold-dim);text-underline-offset:3px}
+.back-to-top{position:fixed;right:calc(20px + var(--safe-right));bottom:calc(20px + var(--safe-bottom));z-index:60;display:inline-flex;align-items:center;justify-content:center;min-width:58px;min-height:46px;padding:12px 15px;border-radius:999px;border:1px solid var(--line-strong);background:rgba(5,7,11,.84);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:var(--text);font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;box-shadow:0 16px 44px rgba(0,0,0,.36),0 0 24px rgba(85,213,238,.12);opacity:0;pointer-events:none;transform:translateY(10px);transition:opacity .2s ease,transform .2s ease,border-color .2s ease}
+.back-to-top.visible{opacity:1;pointer-events:auto;transform:none}
+.back-to-top:hover{border-color:var(--gold);color:var(--gold)}
+@media (max-width:600px){.contact-row .button{width:100%}.back-to-top{right:calc(14px + var(--safe-right));bottom:calc(14px + var(--safe-bottom));min-width:52px;min-height:42px;font-size:.66rem}}
+@media print{.back-to-top{display:none!important}}
