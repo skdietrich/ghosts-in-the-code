@@ -23,17 +23,17 @@ jobs:
           test -s styles.css
           test -s script.js
           test -s archive.json
-          test -s CNAME
           test -s manifest.webmanifest
+          test ! -e CNAME
       - name: Validate JSON
         run: |
           python -m json.tool archive.json >/dev/null
           python -m json.tool manifest.webmanifest >/dev/null
-      - name: Check domain consistency
+      - name: Check GitHub Pages URL consistency
         shell: bash
         run: |
           set -euo pipefail
-          DOMAIN="$(tr -d '\r\n' < CNAME)"
-          grep -Fq "https://${DOMAIN}/" index.html
-          grep -Fq "https://${DOMAIN}/sitemap.xml" robots.txt
-          grep -Fq "https://${DOMAIN}/" sitemap.xml
+          BASE="https://skdietrich.github.io/ghosts-in-the-code/"
+          grep -Fq "$BASE" index.html
+          grep -Fq "${BASE}sitemap.xml" robots.txt
+          grep -Fq "$BASE" sitemap.xml
