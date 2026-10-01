@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "code": "01",
+      "short": "Witness",
+      "status": "WITNESS / OPEN",
+      "title": "The wrong man for easy belief.",
+      "deck": "The testimony begins with the person giving it.",
+      "quote": "“I do not ask you to believe me. I ask you to check my work.”",
+      "body": "A professional skeptic, historian, and systems investigator becomes part of the evidence. Before the death event is allowed to carry meaning, the witness is audited. The book begins with character, motive, memory, and the habits that made easy belief unlikely.",
+      "route": "START / THE MAN I WAS"
+    },
+    {
+      "code": "02",
+      "short": "Five minutes",
+      "status": "DEATH EVENT / OPEN",
+      "title": "The body stops. The record continues.",
+      "deck": "The ambulance is the threshold.",
+      "quote": "“No light. No voice.”",
+      "body": "Pain ends, the body remains below, and the witness enters the event that drives the rest of the book. The account is presented as testimony to be examined, not a demand for instant belief. The five minutes matter because everything after them is an attempt to discover what, if anything, crossed that boundary.",
+      "route": "NEXT / THE THRESHOLD"
+    },
+    {
+      "code": "03",
+      "short": "Review",
+      "status": "ACCOUNTING / OPEN",
+      "title": "Not comfort. Accounting.",
+      "deck": "The life review is the moral center of the book.",
+      "quote": "“The review is not watched. It is felt.”",
+      "body": "The record is experienced from inside the people who carried the cost. Reputation falls away. Intention and consequence remain. The survival question therefore becomes inseparable from another question: what part of a life arrives with us if consciousness does not end at death?",
+      "route": "NEXT / THE LEDGER"
+    },
+    {
+      "code": "11",
+      "short": "Field nights",
+      "status": "FIELD / OPEN",
+      "title": "The hotel floor that stopped taking guests.",
+      "deck": "A physical place replaces abstraction.",
+      "quote": "“Investigation is the wrong word. Search and rescue.”",
+      "body": "A downtown hotel, an empty corridor, solo controls, a protected source, and a method intended to resist suggestion. The field material treats anomaly as a responsibility before it treats it as spectacle. If any part of the account is true, the ethical question is not merely what was detected, but who might still be afraid.",
+      "route": "NEXT / THE 24TH FLOOR"
+    },
+    {
+      "code": "12",
+      "short": "Digital séance",
+      "status": "MACHINE / OPEN",
+      "title": "The newest machine asks the oldest question.",
+      "deck": "A simulation can sound sincere without being alive.",
+      "quote": "“The dead in the box are perfectly agreeable.”",
+      "body": "AI grief technology can reconstruct voice, style, memory fragments, and conversational habits. The book asks how evidence of survival can be protected when imitation becomes emotionally convincing, scalable, and commercially available. The machine does not have to lie in order to confuse the category.",
+      "route": "NEXT / THE MACHINE AGE"
+    }
+  ]
+}
