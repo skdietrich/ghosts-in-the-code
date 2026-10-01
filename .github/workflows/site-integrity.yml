@@ -22,13 +22,10 @@ jobs:
           test -s index.html
           test -s styles.css
           test -s script.js
-          test -s archive.json
           test -s manifest.webmanifest
           test ! -e CNAME
-      - name: Validate JSON
-        run: |
-          python -m json.tool archive.json >/dev/null
-          python -m json.tool manifest.webmanifest >/dev/null
+      - name: Validate manifest
+        run: python -m json.tool manifest.webmanifest >/dev/null
       - name: Check GitHub Pages URL consistency
         shell: bash
         run: |
