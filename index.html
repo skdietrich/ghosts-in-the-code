@@ -124,24 +124,24 @@
 
       <div class="record-layout" data-record>
         <div class="record-tabs" role="tablist" aria-label="Book movements">
-          <button type="button" role="tab" aria-selected="true" data-record-tab="death">
+          <button type="button" role="tab" aria-selected="true" data-record-tab="death" aria-controls="record-panel">
             <span>01</span><strong>Death</strong><small>The threshold</small>
           </button>
-          <button type="button" role="tab" aria-selected="false" data-record-tab="review">
+          <button type="button" role="tab" aria-selected="false" data-record-tab="review" aria-controls="record-panel">
             <span>02</span><strong>Review</strong><small>The accounting</small>
           </button>
-          <button type="button" role="tab" aria-selected="false" data-record-tab="field">
+          <button type="button" role="tab" aria-selected="false" data-record-tab="field" aria-controls="record-panel">
             <span>03</span><strong>Field</strong><small>The rooms</small>
           </button>
-          <button type="button" role="tab" aria-selected="false" data-record-tab="medium">
+          <button type="button" role="tab" aria-selected="false" data-record-tab="medium" aria-controls="record-panel">
             <span>04</span><strong>Mediumship</strong><small>The test</small>
           </button>
-          <button type="button" role="tab" aria-selected="false" data-record-tab="machine">
+          <button type="button" role="tab" aria-selected="false" data-record-tab="machine" aria-controls="record-panel">
             <span>05</span><strong>Machine</strong><small>The imitation</small>
           </button>
         </div>
 
-        <article class="record-panel" role="tabpanel" aria-live="polite">
+        <article class="record-panel" id="record-panel" role="tabpanel" aria-live="polite">
           <p class="record-label" data-record-label>01 / DEATH</p>
           <h3 data-record-title>The body stops. The story does not.</h3>
           <blockquote data-record-quote>“No light. No voice.”</blockquote>
@@ -298,7 +298,7 @@
   <footer class="site-footer">
     <div>Ghosts in the Code</div>
     <div>Dr. Stephen Dietrich-Kolokouris feat. Cindy Kaza</div>
-    <div>Official GitHub Pages site</div>
+    <div>Media: gitc@wolframtek.de</div>
   </footer>
 
   <script src="script.js?v=cinematic-v2" defer></script>
