@@ -100,7 +100,7 @@ if(record){
     if(route)route.textContent=item.route;
   };
 
-  tabs.forEach((tab,index)=>{
+  activate('death');\n\n  tabs.forEach((tab,index)=>{
     tab.addEventListener('click',()=>activate(tab.dataset.recordTab));
     tab.addEventListener('keydown',e=>{
       if(!['ArrowRight','ArrowDown','ArrowLeft','ArrowUp'].includes(e.key))return;
