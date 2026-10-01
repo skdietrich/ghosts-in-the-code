@@ -1,0 +1,39 @@
+name: Site integrity
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Required files
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s index.html
+          test -s styles.css
+          test -s script.js
+          test -s archive.json
+          test -s CNAME
+          test -s manifest.webmanifest
+      - name: Validate JSON
+        run: |
+          python -m json.tool archive.json >/dev/null
+          python -m json.tool manifest.webmanifest >/dev/null
+      - name: Check domain consistency
+        shell: bash
+        run: |
+          set -euo pipefail
+          DOMAIN="$(tr -d '\r\n' < CNAME)"
+          grep -Fq "https://${DOMAIN}/" index.html
+          grep -Fq "https://${DOMAIN}/sitemap.xml" robots.txt
+          grep -Fq "https://${DOMAIN}/" sitemap.xml
