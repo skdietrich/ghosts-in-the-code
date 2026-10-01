@@ -92,7 +92,7 @@ if(record){
 
   const activate=key=>{
     const item=recordData[key]||recordData.death;
-    tabs.forEach(tab=>tab.setAttribute('aria-selected',String(tab.dataset.recordTab===key)));
+    tabs.forEach(tab=>{const selected=tab.dataset.recordTab===key;tab.setAttribute('aria-selected',String(selected));tab.tabIndex=selected?0:-1;});
     if(label)label.textContent=item.label;
     if(title)title.textContent=item.title;
     if(quote)quote.textContent=item.quote;
