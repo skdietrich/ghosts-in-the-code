@@ -6,7 +6,7 @@
   <title>Ghosts in the Code | Dr. Stephen Dietrich-Kolokouris feat. Cindy Kaza</title>
   <meta name="description" content="Ghosts in the Code is a true account of death, evidence, mediumship, field investigation, and the machine age of grief.">
   <meta name="author" content="Dr. Stephen Dietrich-Kolokouris">
-  <meta name="theme-color" content="#0b0b0a">
+  <meta name="theme-color" content="#05080b">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Ghosts in the Code">
   <meta property="og:description" content="What would you give for a chance for your soul to continue...">
@@ -20,7 +20,8 @@
   <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
   <link rel="apple-touch-icon" href="assets/icon-192.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles.css?v=cinematic-v2">
+  <link rel="preload" as="image" href="assets/cover.webp" type="image/webp">
+  <link rel="stylesheet" href="styles.css?v=cinematic-v2b">
 </head>
 <body>
   <div class="progress" aria-hidden="true"><span data-progress></span></div>
@@ -41,16 +42,18 @@
 
   <main id="main">
     <section class="hero" id="top">
-      <div class="hero-ghost" aria-hidden="true">GHOSTS</div>
-
       <div class="hero-copy reveal">
         <p class="overline">A TRUE ACCOUNT OF DEATH, EVIDENCE &amp; THE MACHINE AGE</p>
+
         <h1>
-          <span>Ghosts</span>
-          <span>in the Code</span>
+          <span class="title-ghosts">Ghosts</span>
+          <span class="title-small">in the</span>
+          <span class="title-code">Code</span>
         </h1>
+
         <p class="tagline">What would you give for a chance for your soul to continue...</p>
-        <p class="dek">A historian dies for five minutes, returns with a moral accounting he cannot dismiss, and follows the evidence into mediumship, field investigation, and the machines learning to speak in the voices of the dead.</p>
+
+        <p class="dek">A historian dies for five minutes, returns with a moral accounting he cannot dismiss, and follows the evidence into mediumship, field investigation, and machines learning to speak in the voices of the dead.</p>
 
         <div class="hero-byline">
           <span>By <strong>Dr. Stephen Dietrich-Kolokouris</strong></span>
@@ -58,28 +61,29 @@
         </div>
 
         <div class="hero-actions">
-          <a href="#book" class="text-link">Enter the book <span>↘</span></a>
-          <a href="#media" class="text-link">Media / interviews <span>↘</span></a>
+          <a href="#book">Enter the book <span>↓</span></a>
+          <a href="#media">Media / interviews <span>↗</span></a>
         </div>
       </div>
 
-      <figure class="hero-object reveal">
-        <img src="assets/jacket-3d-still.png" alt="Ghosts in the Code book jacket" width="1400" height="1400" fetchpriority="high">
-        <figcaption>BOOK OBJECT / WORKING JACKET</figcaption>
+      <figure class="hero-cover reveal">
+        <img src="assets/cover.webp" alt="Ghosts in the Code book cover" width="1024" height="1536" fetchpriority="high">
+        <figcaption>WORKING COVER / GHOSTS IN THE CODE</figcaption>
       </figure>
 
-      <div class="hero-index" aria-hidden="true">
-        <span>01 / DEATH</span>
-        <span>02 / REVIEW</span>
-        <span>03 / FIELD</span>
-        <span>04 / MEDIUMSHIP</span>
-        <span>05 / MACHINE</span>
+      <div class="hero-footer" aria-hidden="true">
+        <span>DEATH</span>
+        <span>REVIEW</span>
+        <span>FIELD</span>
+        <span>MEDIUMSHIP</span>
+        <span>MACHINE</span>
       </div>
     </section>
 
     <section class="declaration" id="book">
       <p class="section-kicker">WHAT THIS BOOK IS</p>
       <h2>This is not a comfort memoir.<br>This is not a ghost-hunting scrapbook.<br>This is not an AI panic piece.</h2>
+
       <div class="declaration-grid">
         <p class="lead">It is a witness record built around one question: <em>what survives, what only imitates survival, and how can we tell the difference?</em></p>
         <p>Ghosts in the Code begins with a five-minute cardiac arrest and follows the consequences into a life review, recovery, field investigation, mediumship under limits, and the ethical shock of synthetic voices that can now imitate the dead.</p>
@@ -128,6 +132,7 @@
           <img src="assets/stephen.jpg" alt="Dr. Stephen Dietrich-Kolokouris" loading="lazy">
         </picture>
       </div>
+
       <div class="witness-copy reveal">
         <p class="section-kicker">THE WITNESS</p>
         <h2>The book begins by putting its own narrator on trial.</h2>
@@ -138,19 +143,15 @@
     </section>
 
     <section class="field" id="field">
-      <header class="field-head">
+      <div class="field-number" aria-hidden="true">24</div>
+
+      <div class="field-copy">
         <p class="section-kicker">FIELD FILE 11</p>
         <h2>The twenty-fourth floor.</h2>
-        <p>A downtown hotel. A floor held out of inventory. Solo controls. A protected source. A night that changes the vocabulary from investigation to search and rescue.</p>
-      </header>
+        <p class="field-lede">A downtown hotel. A floor held out of inventory. Solo controls. A protected source. A night that changes the vocabulary from investigation to search and rescue.</p>
 
-      <figure class="field-image reveal">
-        <img src="assets/exhibit-a-witness-thumb.png" alt="Field evidence exhibit" loading="lazy">
-        <figcaption>
-          <span>EXHIBIT A</span>
-          <strong>“Investigation is the wrong word. Search and rescue.”</strong>
-        </figcaption>
-      </figure>
+        <blockquote>“Investigation is the wrong word. Search and rescue.”</blockquote>
+      </div>
 
       <div class="field-facts">
         <div><span>LOCATION</span><strong>Downtown Dallas</strong></div>
@@ -167,6 +168,7 @@
         <p>Voice cloning, memory reconstruction, personality simulation and grief technology create a new evidentiary problem: imitation can become emotionally convincing before it becomes ontologically meaningful.</p>
         <blockquote>“The dead in the box are perfectly agreeable.”</blockquote>
       </div>
+
       <div class="machine-steps">
         <article><span>01</span><h3>Reconstruct</h3><p>Voice, language patterns, images and memories become training material.</p></article>
         <article><span>02</span><h3>Simulate</h3><p>The system answers in a style recognizable enough to feel personal.</p></article>
@@ -179,12 +181,22 @@
       <div class="object-copy">
         <p class="section-kicker">THE BOOK AS OBJECT</p>
         <h2>Front. Spine. Back.</h2>
-        <p>The visual identity is built around the physical book, not a software dashboard.</p>
+        <p>The visual identity comes from the physical book itself, not from a software interface.</p>
       </div>
+
       <div class="object-grid">
-        <figure><img src="assets/cover.webp" alt="Ghosts in the Code front cover" loading="lazy"><figcaption>FRONT</figcaption></figure>
-        <figure><img src="assets/jacket-spine.png" alt="Ghosts in the Code spine" loading="lazy"><figcaption>SPINE</figcaption></figure>
-        <figure><img src="assets/jacket-back.png" alt="Ghosts in the Code back cover" loading="lazy"><figcaption>BACK</figcaption></figure>
+        <figure>
+          <img src="assets/cover.webp" alt="Ghosts in the Code front cover" loading="lazy">
+          <figcaption>FRONT</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/jacket-spine.png" alt="Ghosts in the Code spine" loading="lazy">
+          <figcaption>SPINE</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/jacket-back.png" alt="Ghosts in the Code back cover" loading="lazy">
+          <figcaption>BACK</figcaption>
+        </figure>
       </div>
     </section>
 
