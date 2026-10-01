@@ -1,625 +1,306 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Ghosts in the Code | Dr. Stephen Dietrich-Kolokouris feat. Cindy Kaza</title>
-  <meta name="description" content="Official website for Ghosts in the Code by Dr. Stephen Dietrich-Kolokouris feat. Cindy Kaza — a true account of death, evidence, mediumship, and the machines learning to speak in the voices of the dead." />
-  <meta name="author" content="Dr. Stephen Dietrich-Kolokouris" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Ghosts in the Code" />
-  <meta property="og:description" content="What would you give for a chance for your soul to continue..." />
-  <meta property="og:url" content="https://skdietrich.github.io/ghosts-in-the-code/" />
-  <meta property="og:image" content="https://skdietrich.github.io/ghosts-in-the-code/assets/og-image.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Ghosts in the Code" />
-  <meta name="twitter:description" content="What would you give for a chance for your soul to continue..." />
-  <meta name="twitter:image" content="https://skdietrich.github.io/ghosts-in-the-code/assets/og-image.jpg" />
-  <link rel="canonical" href="https://skdietrich.github.io/ghosts-in-the-code/" />
-  <meta name="theme-color" content="#05070b" />
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png" />
-  <link rel="apple-touch-icon" href="assets/icon-192.png" />
-  <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="stylesheet" href="styles.css?v=restore1" />
+  <meta name="description" content="Ghosts in the Code is a true account of death, evidence, mediumship, field investigation, and the machine age of grief.">
+  <meta name="author" content="Dr. Stephen Dietrich-Kolokouris">
+  <meta name="theme-color" content="#05080b">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ghosts in the Code">
+  <meta property="og:description" content="What would you give for a chance for your soul to continue...">
+  <meta property="og:url" content="https://skdietrich.github.io/ghosts-in-the-code/">
+  <meta property="og:image" content="https://skdietrich.github.io/ghosts-in-the-code/assets/og-image.jpg">\n  <meta property="og:image:width" content="1200">\n  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ghosts in the Code">
+  <meta name="twitter:description" content="What would you give for a chance for your soul to continue...">
+  <meta name="twitter:image" content="https://skdietrich.github.io/ghosts-in-the-code/assets/og-image.jpg">
+  <link rel="canonical" href="https://skdietrich.github.io/ghosts-in-the-code/">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" as="image" href="assets/responsive/cover-720.webp" type="image/webp" imagesrcset="assets/responsive/cover-320.webp 320w, assets/responsive/cover-480.webp 480w, assets/responsive/cover-720.webp 720w, assets/responsive/cover-960.webp 960w, assets/responsive/cover-1200.webp 1200w, assets/responsive/cover-1365.webp 1365w" imagesizes="(max-width: 760px) 72vw, 37vw">
+  <link rel="stylesheet" href="styles.css?v=cinematic-v2b">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "Ghosts in the Code",
+    "description": "A true account of death, evidence, mediumship, field investigation, and the machine age of grief.",
+    "url": "https://skdietrich.github.io/ghosts-in-the-code/",
+    "image": "https://skdietrich.github.io/ghosts-in-the-code/assets/cover.jpg",
+    "author": {
+      "@type": "Person",
+      "name": "Dr. Stephen Dietrich-Kolokouris"
+    },
+    "contributor": {
+      "@type": "Person",
+      "name": "Cindy Kaza"
+    },
+    "about": [
+      "Near-death experience",
+      "Consciousness",
+      "Mediumship",
+      "Paranormal investigation",
+      "Artificial intelligence",
+      "Grief technology"
+    ]
+  }
+  </script>
 </head>
 <body>
-  <canvas id="signal-field" aria-hidden="true"></canvas>
+  <div class="progress" aria-hidden="true"><span data-progress></span></div>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <div class="boot-overlay" data-boot aria-hidden="true">
-    <div class="boot-card">
-      <p class="boot-kicker">Ghosts in the Code</p>
-      <div class="boot-lines" aria-label="Opening archive sequence">
-        <span>INITIALIZING WITNESS ARCHIVE</span>
-        <span>LOADING CHAPTER 1: THE MAN I WAS</span>
-        <span>LOADING CHAPTER 11: FIELD NIGHTS</span>
-        <span>CHECKING TESTIMONY AGAINST THE MACHINE</span>
-        <span>ARCHIVE OPEN</span>
-      </div>
-      <div class="boot-bar"><i></i></div>
-    </div>
-  </div>
-
-  <header class="site-header" data-elevate>
-    <a class="brand" href="#top" aria-label="Ghosts in the Code home">
-      <span class="brand-mark">G</span>
-      <span class="brand-text">Ghosts in the Code</span>
-    </a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="Ghosts in the Code home">GHOSTS IN THE CODE</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
       <a href="#book">Book</a>
-      <a href="#why-different">Why</a>
-      <a href="#archive">Archive</a>
-      <a href="#previews">Previews</a>
-      <a href="#field-file">Field File</a>
-      <a href="#ai-dead">AI</a>
+      <a href="#record">Record</a>
+      <a href="#field">Field</a>
+      <a href="#machine">AI</a>
+      <a href="#people">People</a>
       <a href="#media">Media</a>
-      <a class="nav-cta" href="#updates">Updates</a>
     </nav>
   </header>
 
   <main id="main">
-    <section id="top" class="hero section-pad">
-      <div class="hero-bg" aria-hidden="true"></div>
-      <div class="signal-fragments" aria-hidden="true">
-        <span>testimony detected</span>
-        <span>boundary event logged</span>
-        <span>witness reliability: under audit</span>
-        <span>voice reconstruction risk: high</span>
-      </div>
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <p class="kicker">Official book site</p>
-          <h1>Ghosts in the Code</h1>
-          <p class="tagline">What would you give for a chance for your soul to continue...</p>
-          <p class="hero-subtitle">A true account of death, disclosure, evidential mediumship, and the machines now learning to speak in the voices of the dead.</p>
-          <div class="hero-status" aria-label="Archive status">
-            <span>Witness file open</span>
-            <span>Field records logged</span>
-            <span>Machine question active</span>
-          </div>
-          <svg class="hero-ekg" viewBox="0 0 900 90" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M0,45 L115,45 L135,45 L144,17 L154,73 L163,38 L174,45 L370,45 L386,45 L685,45 L704,45 L713,14 L724,76 L734,36 L746,45 L900,45" fill="none" stroke="currentColor" stroke-width="1.7" />
-          </svg>
-          <p class="byline">By <strong>Dr. Stephen Dietrich-Kolokouris</strong><br />feat. <strong>Cindy Kaza</strong></p>
-          <div class="cta-row">
-            <a class="button primary" href="#updates">Get book updates</a>
-            <a class="button secondary" href="#archive">Open the archive</a>
-            <a class="button secondary" href="#previews">Read previews</a>
-          </div>
-          <p class="microcopy">A witness record: death, life review, field investigation, tested mediumship, and the machine age of grief.</p>
+    <section class="hero" id="top">
+      <div class="hero-copy reveal">
+        <p class="overline">A TRUE ACCOUNT OF DEATH, EVIDENCE &amp; THE MACHINE AGE</p>
+
+        <h1>
+          <span class="title-ghosts">Ghosts</span>
+          <span class="title-small">in the</span>
+          <span class="title-code">Code</span>
+        </h1>
+
+        <p class="tagline">What would you give for a chance for your soul to continue...</p>
+
+        <p class="dek">A historian dies for five minutes, returns with a moral accounting he cannot dismiss, and follows the evidence into mediumship, field investigation, and machines learning to speak in the voices of the dead.</p>
+
+        <div class="hero-byline">
+          <span>By <strong>Dr. Stephen Dietrich-Kolokouris</strong></span>
+          <span>Featuring <strong>Cindy Kaza</strong></span>
         </div>
 
-        <div class="cover-stage reveal" data-tilt-card>
-          <div class="cover-halo"></div>
+        <div class="hero-actions">
+          <a href="#book">Enter the book <span>↓</span></a>
+          <a href="#media">Media / interviews <span>↗</span></a>
+        </div>
+      </div>
+
+      <figure class="hero-cover reveal">
+        <picture>\n          <source type="image/webp" srcset="assets/responsive/cover-320.webp 320w, assets/responsive/cover-480.webp 480w, assets/responsive/cover-720.webp 720w, assets/responsive/cover-960.webp 960w, assets/responsive/cover-1200.webp 1200w, assets/responsive/cover-1365.webp 1365w" sizes="(max-width: 760px) 72vw, 37vw">\n          <img src="assets/cover.jpg" srcset="assets/responsive/cover-320.jpg 320w, assets/responsive/cover-480.jpg 480w, assets/responsive/cover-720.jpg 720w, assets/responsive/cover-960.jpg 960w, assets/responsive/cover-1200.jpg 1200w, assets/responsive/cover-1365.jpg 1365w" sizes="(max-width: 760px) 72vw, 37vw" alt="Ghosts in the Code book cover" width="1024" height="1536" fetchpriority="high" decoding="async">\n        </picture>
+        <figcaption>WORKING COVER / GHOSTS IN THE CODE</figcaption>
+      </figure>
+
+      <div class="hero-footer" aria-hidden="true">
+        <span>DEATH</span>
+        <span>REVIEW</span>
+        <span>FIELD</span>
+        <span>MEDIUMSHIP</span>
+        <span>MACHINE</span>
+      </div>
+    </section>
+
+    <section class="declaration" id="book">
+      <p class="section-kicker">WHAT THIS BOOK IS</p>
+      <h2>This is not a comfort memoir.<br>This is not a ghost-hunting scrapbook.<br>This is not an AI panic piece.</h2>
+
+      <div class="declaration-grid">
+        <p class="lead">It is a witness record built around one question: <em>what survives, what only imitates survival, and how can we tell the difference?</em></p>
+        <p>Ghosts in the Code begins with a five-minute cardiac arrest and follows the consequences into a life review, recovery, field investigation, mediumship under limits, and the ethical shock of synthetic voices that can now imitate the dead.</p>
+      </div>
+    </section>
+
+    <section class="record" id="record">
+      <header class="section-head">
+        <p class="section-kicker">THE RECORD</p>
+        <h2>Five movements.<br>One unresolved question.</h2>
+      </header>
+
+      <div class="record-layout" data-record>
+        <div class="record-tabs" role="tablist" aria-label="Book movements">
+          <button type="button" role="tab" aria-selected="true" data-record-tab="death" aria-controls="record-panel">
+            <span>01</span><strong>Death</strong><small>The threshold</small>
+          </button>
+          <button type="button" role="tab" aria-selected="false" tabindex="-1" data-record-tab="review" aria-controls="record-panel">
+            <span>02</span><strong>Review</strong><small>The accounting</small>
+          </button>
+          <button type="button" role="tab" aria-selected="false" tabindex="-1" data-record-tab="field" aria-controls="record-panel">
+            <span>03</span><strong>Field</strong><small>The rooms</small>
+          </button>
+          <button type="button" role="tab" aria-selected="false" tabindex="-1" data-record-tab="medium" aria-controls="record-panel">
+            <span>04</span><strong>Mediumship</strong><small>The test</small>
+          </button>
+          <button type="button" role="tab" aria-selected="false" tabindex="-1" data-record-tab="machine" aria-controls="record-panel">
+            <span>05</span><strong>Machine</strong><small>The imitation</small>
+          </button>
+        </div>
+
+        <article class="record-panel" id="record-panel" role="tabpanel" aria-live="polite">
+          <p class="record-label" data-record-label>01 / DEATH</p>
+          <h3 data-record-title>The body stops. The story does not.</h3>
+          <blockquote data-record-quote>“No light. No voice.”</blockquote>
+          <p data-record-copy>A five-minute cardiac arrest becomes the engine of the book. Not certainty. Not reassurance. A boundary event that leaves the witness with a problem he cannot file away.</p>
+          <p class="record-route" data-record-route>CHAPTER PATH / THE THRESHOLD</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="witness">
+      <div class="witness-photo reveal">
+        <picture>
+          <source type="image/webp" srcset="assets/responsive/stephen-540.webp 540w, assets/responsive/stephen-900.webp 900w, assets/responsive/stephen-1200.webp 1200w, assets/responsive/stephen-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 52vw">
+          <img src="assets/stephen.jpg" alt="Dr. Stephen Dietrich-Kolokouris" loading="lazy">
+        </picture>
+      </div>
+
+      <div class="witness-copy reveal">
+        <p class="section-kicker">THE WITNESS</p>
+        <h2>The book begins by putting its own narrator on trial.</h2>
+        <p>Before the ambulance, before the void, before the medium and the hotel floor, the reader meets the man giving the testimony. The habits that made him hard to comfort also make him hard to impress.</p>
+        <blockquote>“Emotion is weakness, and weakness gets used.”</blockquote>
+        <p>The life review matters because that man is forced to experience his record from the other side of the transaction.</p>
+      </div>
+    </section>
+
+    <section class="field" id="field">
+      <div class="field-number" aria-hidden="true">24</div>
+
+      <div class="field-copy">
+        <p class="section-kicker">FIELD FILE 11</p>
+        <h2>The twenty-fourth floor.</h2>
+        <p class="field-lede">A downtown hotel. A floor held out of inventory. Solo controls. A protected source. A night that changes the vocabulary from investigation to search and rescue.</p>
+
+        <blockquote>“Investigation is the wrong word. Search and rescue.”</blockquote>
+      </div>
+
+      <div class="field-facts">
+        <div><span>LOCATION</span><strong>Downtown Dallas</strong></div>
+        <div><span>ACCESS</span><strong>Restricted</strong></div>
+        <div><span>METHOD</span><strong>Solo controls</strong></div>
+        <div><span>STATUS</span><strong>Unresolved</strong></div>
+      </div>
+    </section>
+
+    <section class="machine" id="machine">
+      <div class="machine-copy reveal">
+        <p class="section-kicker">THE DIGITAL SÉANCE</p>
+        <h2>The machine does not have to be alive to sound like the dead.</h2>
+        <p>Voice cloning, memory reconstruction, personality simulation and grief technology create a new evidentiary problem: imitation can become emotionally convincing before it becomes ontologically meaningful.</p>
+        <blockquote>“The dead in the box are perfectly agreeable.”</blockquote>
+      </div>
+
+      <div class="machine-steps">
+        <article><span>01</span><h3>Reconstruct</h3><p>Voice, language patterns, images and memories become training material.</p></article>
+        <article><span>02</span><h3>Simulate</h3><p>The system answers in a style recognizable enough to feel personal.</p></article>
+        <article><span>03</span><h3>Confuse</h3><p>Fluency can be mistaken for presence, especially when grief supplies the missing certainty.</p></article>
+        <article><span>04</span><h3>Test</h3><p>The real question is what evidence could distinguish contact from reconstruction.</p></article>
+      </div>
+    </section>
+
+    <section class="book-object">
+      <div class="object-copy">
+        <p class="section-kicker">THE BOOK AS OBJECT</p>
+        <h2>Front. Spine. Back.</h2>
+        <p>The visual identity comes from the physical book itself, not from a software interface.</p>
+      </div>
+
+      <div class="object-grid">
+        <figure>
+          <picture>\n            <source type="image/webp" srcset="assets/responsive/cover-480.webp 480w, assets/responsive/cover-720.webp 720w, assets/responsive/cover-960.webp 960w, assets/responsive/cover-1200.webp 1200w" sizes="(max-width: 760px) 82vw, 52vw">\n            <img src="assets/cover.jpg" srcset="assets/responsive/cover-480.jpg 480w, assets/responsive/cover-720.jpg 720w, assets/responsive/cover-960.jpg 960w, assets/responsive/cover-1200.jpg 1200w" sizes="(max-width: 760px) 82vw, 52vw" alt="Ghosts in the Code front cover" loading="lazy" decoding="async">\n          </picture>
+          <figcaption>FRONT</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/jacket-spine.png" alt="Ghosts in the Code spine" loading="lazy">
+          <figcaption>SPINE</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/jacket-back.png" alt="Ghosts in the Code back cover" loading="lazy">
+          <figcaption>BACK</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="people" id="people">
+      <header class="section-head compact">
+        <p class="section-kicker">PEOPLE IN THE RECORD</p>
+        <h2>Witness and medium.</h2>
+      </header>
+
+      <div class="people-grid">
+        <article class="person reveal">
           <picture>
-            <source type="image/webp" srcset="assets/responsive/cover-320.webp 320w, assets/responsive/cover-480.webp 480w, assets/responsive/cover-720.webp 720w, assets/responsive/cover-960.webp 960w, assets/responsive/cover-1200.webp 1200w, assets/responsive/cover-1365.webp 1365w" sizes="(max-width: 520px) 68vw, (max-width: 900px) 270px, (min-width: 2560px) 460px, 390px" />
-            <img src="assets/cover.jpg" srcset="assets/responsive/cover-320.jpg 320w, assets/responsive/cover-480.jpg 480w, assets/responsive/cover-720.jpg 720w, assets/responsive/cover-960.jpg 960w, assets/responsive/cover-1200.jpg 1200w, assets/responsive/cover-1365.jpg 1365w" sizes="(max-width: 520px) 68vw, (max-width: 900px) 270px, (min-width: 2560px) 460px, 390px" alt="Ghosts in the Code book cover" width="1100" height="1650" decoding="async" fetchpriority="high" />
+            <source srcset="assets/stephen.webp" type="image/webp">
+            <img src="assets/stephen.jpg" alt="Dr. Stephen Dietrich-Kolokouris" loading="lazy">
           </picture>
-        </div>
-      </div>
-    </section>
-
-    <section id="why-different" class="section-pad clarity-section">
-      <div class="container split">
-        <div class="section-intro reveal">
-          <p class="kicker">What readers need to know first</p>
-          <h2>This is not a comfort memoir, a ghost-hunting scrapbook, or an AI panic piece.</h2>
-          <p>Ghosts in the Code is a witness record. A historian and systems investigator dies for five minutes, returns with a moral accounting he cannot dismiss, and follows the evidence trail into haunted rooms, tested mediumship, and the new industry teaching machines to speak in the voices of the dead.</p>
-        </div>
-        <div class="feature-card reveal clarity-card">
-          <p class="card-label">The central question</p>
-          <p class="feature-quote">What survives, what only imitates survival, and how can we tell the difference?</p>
-          <p>The book does not ask readers to choose belief or debunking on page one. It asks them to examine the witness, follow the record, and decide what the evidence can honestly carry.</p>
-        </div>
-      </div>
-      <div class="container clarity-grid" aria-label="What the book contains">
-        <article class="clarity-item reveal"><span>01</span><h3>Death</h3><p>A five-minute cardiac arrest becomes the doorway into the rest of the investigation.</p></article>
-        <article class="clarity-item reveal"><span>02</span><h3>Accounting</h3><p>The life review is not presented as comfort. It is moral evidence, felt from the other side of every harm.</p></article>
-        <article class="clarity-item reveal"><span>03</span><h3>Field Work</h3><p>Haunted rooms, witness logs, empty nights, and the discipline of refusing to turn anomaly into proof too quickly.</p></article>
-        <article class="clarity-item reveal"><span>04</span><h3>The Machine</h3><p>AI can imitate presence with frightening tenderness. The book asks what grief will believe when the imitation answers back.</p></article>
-      </div>
-    </section>
-
-    <section id="witness-audit" class="section-pad audit-section">
-      <div class="container split reverse">
-        <div class="feature-card reveal">
-          <p class="card-label">Why trust the witness?</p>
-          <h2>The book begins by cross-examining its own narrator.</h2>
-          <p>Before the ambulance, before the void, before the medium and the hotel floor, the reader meets the man who had to be broken open to tell the truth. A child taught not to cry becomes an adult trained to read rooms, systems, motives, and weaknesses.</p>
-          <p>That is why the testimony matters. The book does not begin with belief. It begins with an audit.</p>
-        </div>
-        <div class="audit-file reveal">
-          <p class="console-label">WITNESS AUDIT · CHAPTER 1</p>
-          <h3>The inherited commandment</h3>
-          <p class="pull-quote">“Emotion is weakness, and weakness gets used.”</p>
-          <p>That sentence becomes the first machine in the book: a family rule, installed in childhood, that produces a man capable of observation without mercy. The death event matters because that man is forced to feel the record he spent fifty years avoiding.</p>
-        </div>
-      </div>
-    </section>
-
-
-
-    <section id="archive" class="section-pad archive-section">
-      <div class="container archive-grid">
-        <div class="section-intro reveal">
-          <p class="kicker">The living archive</p>
-          <h2>The archive opens in plain language.</h2>
-          <p>The record is arranged like a case file: the witness, the death event, the review, the field nights, the mediumship tests, and the machine question are all placed where the reader can follow them.</p>
-          <div class="archive-meta" aria-label="Archive facts">
-            <span>FILE 01 · The witness</span>
-            <span>FILE 02 · The five minutes</span>
-            <span>FILE 11 · Field nights</span>
-          </div>
-        </div>
-
-        <div class="console reveal" data-console>
-          <div class="console-header">
-            <span class="console-dot"></span>
-            <span>AI / Evidence Console</span>
-            <span class="console-state">reader mode</span>
-          </div>
-          <div class="console-tabs" role="tablist" aria-label="Evidence console tabs">
-            <button class="console-tab active" type="button" role="tab" aria-selected="true" data-console-tab="witness">The witness</button>
-            <button class="console-tab" type="button" role="tab" aria-selected="false" data-console-tab="death">Death event</button>
-            <button class="console-tab" type="button" role="tab" aria-selected="false" data-console-tab="review">The review</button>
-            <button class="console-tab" type="button" role="tab" aria-selected="false" data-console-tab="field">The hotel</button>
-            <button class="console-tab" type="button" role="tab" aria-selected="false" data-console-tab="machine">The machine</button>
-          </div>
-          <div class="console-screen" aria-live="polite">
-            <p class="console-label" data-console-label>FILE 01 · THE WITNESS</p>
-            <h3 data-console-title>The wrong man for easy belief.</h3>
-            <p data-console-copy>A professional skeptic, historian, and systems investigator becomes the witness. Before the testimony is accepted, the witness is audited. A professional skeptic, historian, and systems investigator becomes part of the evidence.</p>
-            <div class="console-readout">
-              <span>signal confidence: narrative</span>
-              <span>reader path: clear</span>
-              <span>action: continue</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container file-cards" aria-label="Reader file cards">
-        <article class="file-card reveal">
-          <span class="file-num">01</span>
-          <h3>Start with the man</h3>
-          <p>Chapter 1 works because it does not begin with a ghost. It begins with the rule that sealed a child and made the later death review unbearable.</p>
-        </article>
-        <article class="file-card reveal">
-          <span class="file-num">02</span>
-          <h3>Follow the death</h3>
-          <p>The ambulance is the threshold: pain stops, the body remains below, and the witness becomes a record from the wrong side of the boundary.</p>
-        </article>
-        <article class="file-card reveal">
-          <span class="file-num">11</span>
-          <h3>Enter the field night</h3>
-          <p>The Magnolia floor gives the investigation a physical place: a downtown hotel, an empty corridor, a protected source, and a method designed to resist suggestion.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="book" class="section-pad book-section">
-      <div class="container split">
-        <div class="section-intro reveal">
-          <p class="kicker">The book</p>
-          <h2>A doorway story built like an evidence file.</h2>
-          <p>Ghosts in the Code begins with a death event and follows the consequences into near-death experience, paranormal field work, evidential mediumship, and the ethical shock of AI recreating the dead before anyone has settled what “contact” even means.</p>
-        </div>
-        <div class="feature-card reveal">
-          <p class="card-label">Core promise</p>
-          <p class="feature-quote">The dead do not need our devices. We do.</p>
-          <p>That is the central tension of the book: the newest technology can imitate presence, but the reader still has to ask what is real, what is manufactured, and what must never be confused.</p>
-        </div>
-      </div>
-
-      <div class="container card-grid three-cards">
-        <article class="info-card reveal">
-          <span class="card-number">01</span>
-          <h3>The death</h3>
-          <p>Five minutes become the engine of the whole investigation: not comfort, not certainty, but a mandate to verify.</p>
-        </article>
-        <article class="info-card reveal">
-          <span class="card-number">02</span>
-          <h3>The search</h3>
-          <p>History, field nights, fraud controls, mediumship, protocols, and the ancient human hunger to know whether consciousness survives.</p>
-        </article>
-        <article class="info-card reveal">
-          <span class="card-number">03</span>
-          <h3>The boundary</h3>
-          <p>AI grief technology is already imitating the dead. The book asks what should be tested before we let the mirror answer back.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="story" class="section-pad story-section">
-      <div class="container">
-        <div class="section-intro centered reveal">
-          <p class="kicker">Reader path</p>
-          <h2>From confession to field night to the machine age of ghosts.</h2>
-          <p>The story moves from confession to clinical death, from field nights to the machine age of ghosts, following a record that becomes harder to dismiss as each layer is opened.</p>
-        </div>
-
-        <div class="pathway" aria-label="Book themes">
-          <article class="path-step reveal">
-            <span>Part I</span>
-            <h3>The man who came back</h3>
-            <p>Death, return, recovery, and the first terrifying question: what if the experience was not only psychological?</p>
-          </article>
-          <article class="path-step reveal">
-            <span>Part II</span>
-            <h3>The investigation</h3>
-            <p>Mediumship, field protocols, hotels, witnesses, anomalies, documentation, and the refusal to let belief outrun method.</p>
-          </article>
-          <article class="path-step reveal">
-            <span>Part III</span>
-            <h3>The machine age of ghosts</h3>
-            <p>When synthetic voices of the dead become products, the old paranormal question becomes a new technological emergency.</p>
-          </article>
-        </div>
-
-        <div class="reader-route reveal" aria-label="Five-step reader route">
-          <div><strong>Start with the man</strong><span>the witness is audited</span></div>
-          <div><strong>Follow the death</strong><span>the five minutes open</span></div>
-          <div><strong>Enter the review</strong><span>the ledger answers back</span></div>
-          <div><strong>Test the field</strong><span>the floor comes alive</span></div>
-          <div><strong>Meet the machine</strong><span>AI imitates the dead</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="previews" class="section-pad preview-section">
-      <div class="container section-intro centered reveal">
-        <p class="kicker">Preview library</p>
-        <h2>Five entry points into the book.</h2>
-        <p>These five entries show the shape of the book: who is speaking, what happened, what the review means, why the field work matters, and why AI belongs in a book about the dead.</p>
-      </div>
-
-      <div class="container preview-shell reveal">
-        <div class="preview-tabs" role="tablist" aria-label="Chapter preview tabs">
-          <button class="preview-tab active" type="button" role="tab" aria-selected="true" aria-controls="prologue-panel" id="prologue-tab" data-preview-tab="prologue">Prologue</button>
-          <button class="preview-tab" type="button" role="tab" aria-selected="false" aria-controls="chapter-one-panel" id="chapter-one-tab" data-preview-tab="chapter-one">Chapter 1</button>
-          <button class="preview-tab" type="button" role="tab" aria-selected="false" aria-controls="chapter-three-panel" id="chapter-three-tab" data-preview-tab="chapter-three">Chapter 3</button>
-          <button class="preview-tab" type="button" role="tab" aria-selected="false" aria-controls="chapter-eleven-panel" id="chapter-eleven-tab" data-preview-tab="chapter-eleven">Chapter 11</button>
-          <button class="preview-tab" type="button" role="tab" aria-selected="false" aria-controls="chapter-twelve-panel" id="chapter-twelve-tab" data-preview-tab="chapter-twelve">Chapter 12</button>
-        </div>
-
-        <div class="preview-panel active" id="prologue-panel" role="tabpanel" aria-labelledby="prologue-tab" data-preview-panel="prologue">
-          <div class="preview-grid">
-            <div class="preview-copy">
-              <p class="card-label">Prologue preview</p>
-              <h3>The Wrong Witness</h3>
-              <p class="preview-lede">The book opens by refusing the usual bargain. It does not offer instant proof, instant comfort, or instant dismissal. It offers a record from a witness trained to distrust records.</p>
-              <div class="pull-quote">“I do not ask you to believe me. I ask you to check my work.”</div>
-              <p>The rules of the book are set here: the testimony will be personal, but it will not be careless. The author is not selling certainty. He is disclosing what happened and asking the reader to examine the file.</p>
-            </div>
-            <div class="sample-card">
-              <p class="card-label">What this section reveals</p>
-              <h4>The promise of the book</h4>
-              <p>A death event. A life review. Field nights. A medium under limits. A history of machines that claimed to carry voices. And now AI, fluent enough to make grief feel answered.</p>
-              <p>The prologue gives the reader the frame: this is a vulnerability disclosure from both sides of the boundary.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="preview-panel" id="chapter-one-panel" role="tabpanel" aria-labelledby="chapter-one-tab" data-preview-panel="chapter-one" hidden>
-          <div class="preview-grid">
-            <div class="preview-copy">
-              <p class="card-label">Chapter 1 preview</p>
-              <h3>The Man I Was</h3>
-              <p class="preview-lede">Chapter 1 explains why the witness matters. It starts in history, moves into childhood, and shows how emotional survival equipment became a sealed life.</p>
-              <div class="pull-quote">“The cause had failed. The discipline survived.”</div>
-              <p>The chapter makes the later life review devastating because the reader understands what kind of man is being reviewed: observant, controlled, strategic, and almost impossible to comfort or deceive.</p>
-            </div>
-            <div class="sample-card">
-              <p class="card-label">Selected sample</p>
-              <h4>The inherited commandment</h4>
-              <p>My mother was born in 1941, inside the machinery of the Third Reich, to parents who believed in it.</p>
-              <p>The cause had failed. The discipline survived.</p>
-              <p>Sometimes history stops wearing a uniform and learns to live in the body.</p>
-              <p><strong>Emotion is weakness, and weakness gets used.</strong></p>
-              <details class="sample-more">
-                <summary>Read why it matters</summary>
-                <p>The crying stopped. Then something underneath the crying stopped too.</p>
-                <p>You cannot close the door on grief and leave joy moving freely through the house. Wonder goes in with it. Awe goes in with it. Love waits outside for a while, then stops knocking.</p>
-                <p>The question is not whether a man like that deserved a second chance. He did not. The question is what it means that he got one anyway.</p>
-              </details>
-            </div>
-          </div>
-        </div>
-
-        <div class="preview-panel" id="chapter-three-panel" role="tabpanel" aria-labelledby="chapter-three-tab" data-preview-panel="chapter-three" hidden>
-          <div class="preview-grid reverse-preview">
-            <div class="preview-copy">
-              <p class="card-label">Chapter 3 preview</p>
-              <h3>The Review</h3>
-              <p class="preview-lede">The life review is the book’s moral center. It is not a comforting slideshow. It is the unedited record of harm, intention, and consequence, experienced from inside the people who carried the cost.</p>
-              <div class="pull-quote">“The review is not watched. It is felt.”</div>
-              <p>This chapter clarifies what is at stake. The question is no longer only whether consciousness survives. The question is what survives with us.</p>
-            </div>
-            <div class="sample-card">
-              <p class="card-label">What this section reveals</p>
-              <h4>Not guilt. Accuracy.</h4>
-              <p>The review weighs intention, not reputation. Kindness performed as marketing enters as marketing. Cruelty dressed as business enters as cruelty.</p>
-              <p>The chapter gives the book its severity: the afterlife question is inseparable from the moral record of the life that arrives there.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="preview-panel" id="chapter-eleven-panel" role="tabpanel" aria-labelledby="chapter-eleven-tab" data-preview-panel="chapter-eleven" hidden>
-          <div class="preview-grid reverse-preview">
-            <div class="preview-copy">
-              <p class="card-label">Chapter 11 preview</p>
-              <h3>Field Nights</h3>
-              <p class="preview-lede">Chapter 11 opens the field record: a downtown Dallas hotel, a preserved twenty-fourth floor, a protected source, solo access, and a night that changes the author’s vocabulary from investigation to search and rescue.</p>
-              <div class="pull-quote">“Investigation is the wrong word. Search and rescue.”</div>
-              <p>The chapter matters because it refuses to treat the paranormal as entertainment. If the account is true even in part, the question is not only what was detected. The question is who might still be afraid, and what responsibility the living have when they enter those rooms.</p>
-            </div>
-            <div class="sample-card">
-              <p class="card-label">Selected sample</p>
-              <h4>The twenty-fourth floor</h4>
-              <p>The Magnolia Hotel took a floor out of inventory.</p>
-              <p>Not closed for renovation. Not unfinished. The twenty-fourth floor is furnished and maintained like the floors above and below it. Housekeeping still goes there. The booking system does not.</p>
-              <p>Things moved. Objects appeared where no one had left them. Other things disappeared. Guests and staff heard noises with no source. Items fell from surfaces in empty rooms. More than one person reported the same feeling: being watched.</p>
-              <details class="sample-more">
-                <summary>Read the turn</summary>
-                <p>There are people in these buildings. Not attractions. Not content. People stranded on the wrong side of their own fear, some of them for lifetimes, waiting for someone to come through the door who knows the territory.</p>
-                <p>That night lives in the witness log as an uncorroborated account. The book says so clearly. The honesty is part of the evidence culture, not a weakness in it.</p>
-              </details>
-            </div>
-          </div>
-        </div>
-
-        <div class="preview-panel" id="chapter-twelve-panel" role="tabpanel" aria-labelledby="chapter-twelve-tab" data-preview-panel="chapter-twelve" hidden>
-          <div class="preview-grid">
-            <div class="preview-copy">
-              <p class="card-label">Chapter 12 preview</p>
-              <h3>The Digital Séance</h3>
-              <p class="preview-lede">The old séance table has become a server room. A voice built from data says the thing grief most needs to hear, and the danger is not that it lies. The danger is that it can sound sincere.</p>
-              <div class="pull-quote">“The dead in the box are perfectly agreeable.”</div>
-              <p>Here the survival question enters the machine age. The book does not ask only whether the dead can speak. It asks what happens when a machine can imitate the answer well enough to change a grieving person’s life.</p>
-            </div>
-            <div class="sample-card">
-              <p class="card-label">What this section reveals</p>
-              <h4>The mirror problem</h4>
-              <p>A living person can surprise you. A simulation can only recombine the archive it was given and the grief that trained it.</p>
-              <p>The chapter gives the modern danger its shape: not fraud in the old sense, but engineered comfort, delivered in a voice the bereaved already miss.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container reader-strip-intro reveal">
-        <p class="kicker">Why readers keep reading</p>
-      </div>
-
-      <div class="container reader-magnets" aria-label="Why readers keep reading">
-        <article class="magnet-card reveal">
-          <span class="card-label">Reason 01</span>
-          <h3>The wrong witness</h3>
-          <p>A professional skeptic and systems man does not arrive asking to be comforted. He arrives as evidence under audit.</p>
-        </article>
-        <article class="magnet-card reveal">
-          <span class="card-label">Reason 02</span>
-          <h3>The inherited rule</h3>
-          <p>The first emotional mystery is not a ghost. It is the sentence that sealed the narrator for fifty years: emotion is weakness.</p>
-        </article>
-        <article class="magnet-card reveal">
-          <span class="card-label">Reason 03</span>
-          <h3>The twenty-fourth floor</h3>
-          <p>A hotel floor taken out of inventory turns the book from testimony into fieldwork.</p>
-        </article>
-        <article class="magnet-card reveal">
-          <span class="card-label">Reason 04</span>
-          <h3>The rescue frame</h3>
-          <p>The paranormal is not sold as spectacle. It becomes a moral question: what if some hauntings are people waiting for help?</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="field-file" class="section-pad field-file-section">
-      <div class="container split">
-        <div class="section-intro reveal">
-          <p class="kicker">Field file 11</p>
-          <h2>The twenty-fourth floor is the book’s strongest real-world mystery.</h2>
-          <p>The Magnolia material gives the reader a place, a method, and a reason to understand the paranormal material as testimony rather than spectacle.</p>
-        </div>
-        <div class="field-dossier reveal" aria-label="Field file summary">
-          <div><span>Status</span><strong>Out of inventory</strong></div>
-          <div><span>Access</span><strong>Protected source / master key</strong></div>
-          <div><span>Method</span><strong>Solo field night</strong></div>
-          <div><span>Claim level</span><strong>Witness log</strong></div>
-          <div><span>Ethical turn</span><strong>Search and rescue</strong></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="ai-dead" class="section-pad ai-dead-section">
-      <div class="container split reverse">
-        <div class="feature-card reveal">
-          <p class="card-label">AI and the dead</p>
-          <h2>The machine does not need to lie to become dangerous.</h2>
-          <p>Ghosts in the Code treats AI grief technology as the newest form of an old human hunger. The telegraph knocked. The photograph posed. The recorder whispered. Now the model answers in complete sentences.</p>
-          <p>The question is not whether the machine is conscious. The question is what grief will believe when the imitation is fluent, warm, and always available.</p>
-        </div>
-        <div class="ai-points reveal">
-          <article><span>01</span><h3>The archive</h3><p>Texts, voicemails, photos, and memory become raw material for a simulated presence.</p></article>
-          <article><span>02</span><h3>The mirror</h3><p>The system can reflect the dead with emotional force, but the light may still come from this side.</p></article>
-          <article><span>03</span><h3>The business plan</h3><p>When grief becomes a subscription, comfort and dependence can start to look dangerously alike.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="ask-archive" class="section-pad ask-section">
-      <div class="container split">
-        <div class="section-intro reveal">
-          <p class="kicker">Ask the archive</p>
-          <h2>The reader’s first questions, answered clearly.</h2>
-          <p>The central questions are answered here: the witness, the death event, the field work, the AI question, and the book’s position on proof.</p>
-        </div>
-        <div class="ask-console reveal" data-ask-archive>
-          <div class="ask-options" role="list" aria-label="Archive questions">
-            <button class="ask-option active" type="button" data-question="witness">Who is the witness?</button>
-            <button class="ask-option" type="button" data-question="ambulance">What happened in the ambulance?</button>
-            <button class="ask-option" type="button" data-question="chapter11">Why does Chapter 11 matter?</button>
-            <button class="ask-option" type="button" data-question="ai">What does AI have to do with the dead?</button>
-            <button class="ask-option" type="button" data-question="proof">Is this proof or a warning?</button>
-          </div>
-          <div class="ask-answer">
-            <p class="console-label" data-ask-label>QUERY · WITNESS</p>
-            <h3 data-ask-title>The witness is part of the evidence.</h3>
-            <p data-ask-copy>Ghosts in the Code does not ask the reader to trust an easy believer. It introduces a man trained to read systems, incentives, fraud, and rooms — then forces that man to become evidence against himself.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="authors" class="section-pad authors-section">
-      <div class="container section-intro centered reveal">
-        <p class="kicker">Identity files</p>
-        <h2>The witness and the medium.</h2>
-      </div>
-
-      <div class="container author-grid">
-        <article class="author-card reveal">
-          <picture>
-            <source type="image/webp" srcset="assets/responsive/stephen-360.webp 360w, assets/responsive/stephen-540.webp 540w, assets/responsive/stephen-720.webp 720w, assets/responsive/stephen-900.webp 900w, assets/responsive/stephen-1200.webp 1200w, assets/responsive/stephen-1600.webp 1600w" sizes="(max-width: 900px) calc(100vw - 32px), (max-width: 1180px) 280px, (min-width: 2560px) 260px, 230px" />
-            <img src="assets/stephen.jpg" srcset="assets/responsive/stephen-360.jpg 360w, assets/responsive/stephen-540.jpg 540w, assets/responsive/stephen-720.jpg 720w, assets/responsive/stephen-900.jpg 900w, assets/responsive/stephen-1200.jpg 1200w, assets/responsive/stephen-1600.jpg 1600w" sizes="(max-width: 900px) calc(100vw - 32px), (max-width: 1180px) 280px, (min-width: 2560px) 260px, 230px" alt="Portrait of Dr. Stephen Dietrich-Kolokouris" width="1160" height="1355" loading="lazy" decoding="async" />
-          </picture>
-          <div class="author-copy">
-            <p class="card-label">AUTHOR FILE 01 · The witness</p>
+          <div>
+            <p>AUTHOR / WITNESS</p>
             <h3>Dr. Stephen Dietrich-Kolokouris</h3>
-            <p>Historian, author, and investigator of claims where memory, testimony, evidence, and the unexplained collide. In Ghosts in the Code, he brings the discipline of historical inquiry and systems thinking to the most personal question imaginable.</p>
+            <span>Historian, author, and investigator of claims where memory, testimony, evidence and the unexplained collide.</span>
           </div>
         </article>
 
-        <article class="author-card reveal">
+        <article class="person reveal">
           <picture>
-            <source type="image/webp" srcset="assets/responsive/cindy-240.webp 240w, assets/responsive/cindy-320.webp 320w, assets/responsive/cindy-362.webp 362w" sizes="(max-width: 900px) min(362px, calc(100vw - 32px)), (max-width: 1180px) 280px, 230px" />
-            <img src="assets/cindy.jpg" srcset="assets/responsive/cindy-240.jpg 240w, assets/responsive/cindy-320.jpg 320w, assets/responsive/cindy-362.jpg 362w" sizes="(max-width: 900px) min(362px, calc(100vw - 32px)), (max-width: 1180px) 280px, 230px" alt="Portrait of Cindy Kaza" width="362" height="423" loading="lazy" decoding="async" />
+            <source srcset="assets/cindy.webp" type="image/webp">
+            <img src="assets/cindy.jpg" alt="Cindy Kaza" loading="lazy">
           </picture>
-          <div class="author-copy">
-            <p class="card-label">AUTHOR FILE 02 · The medium</p>
+          <div>
+            <p>FEATURED / MEDIUMSHIP</p>
             <h3>Cindy Kaza</h3>
-            <p>Cindy Kaza is featured as a central mediumship presence in the story, connected to the field work, the evidential questions, and the search for what can honestly be known.</p>
+            <span>A central mediumship presence in the story, connected to field work, evidential questions and the search for what can honestly be known.</span>
           </div>
         </article>
       </div>
     </section>
 
-    <section id="media" class="section-pad media-section">
-      <div class="container split reverse">
-        <div class="feature-card reveal press-card">
-          <p class="card-label">Press kit</p>
-          <h2>For podcasts, interviews, reviewers, and producers.</h2>
-          <p><strong>One-sentence pitch:</strong> A historian and systems investigator dies for five minutes, returns with a record he cannot dismiss, and follows it into field investigation, mediumship, and the AI grief industry.</p>
-          <p><strong>Short description:</strong> Ghosts in the Code is a true account of death, life review, paranormal field work, evidential mediumship, and the machines now learning to imitate the dead.</p>
-          <div class="cta-row left">
-            <a class="button primary" href="#updates">Request updates</a>
-            <a class="button secondary" href="mailto:gitc@wolframtek.de?subject=Ghosts%20in%20the%20Code%20media%20request">Email media contact</a>
-            <a class="button secondary" href="assets/og-image.jpg" download>Download promo image</a>
-          </div>
-        </div>
-        <div class="section-intro reveal">
-          <p class="kicker">Interview topics</p>
-          <h2>The conversations the book opens.</h2>
-          <div class="topic-list press-topics">
-            <span>A near-death experience without easy comfort</span>
-            <span>The life review as moral evidence</span>
-            <span>Why AI grief technology changes the séance forever</span>
-            <span>What ghost hunting gets wrong about evidence</span>
-            <span>Mediumship, blind protocol, and witness logs</span>
-            <span>The ethics of simulating the dead</span>
-            <span>History, trauma, and inherited emotional rules</span>
-          </div>
-        </div>
+    <section class="media" id="media">
+      <div class="media-copy">
+        <p class="section-kicker">MEDIA / PODCASTS / INTERVIEWS</p>
+        <h2>Six conversations inside one book.</h2>
+        <p>Select a subject for a concise interview angle.</p>
+      </div>
+
+      <div class="media-topics">
+        <button type="button" data-topic="nde">Near-death experience</button>
+        <button type="button" data-topic="ai">AI and the dead</button>
+        <button type="button" data-topic="evidence">Evidence protocols</button>
+        <button type="button" data-topic="mediumship">Mediumship testing</button>
+        <button type="button" data-topic="ethics">Paranormal ethics</button>
+        <button type="button" data-topic="history">History of contact technology</button>
+      </div>
+
+      <div class="media-brief" data-media-brief aria-live="polite">
+        <span>SELECT A SUBJECT</span>
+        <p>Choose an interview topic above.</p>
+      </div>
+
+      <div class="media-actions">
+        <button type="button" data-copy-pitch>Copy book pitch</button>
+        <a href="mailto:gitc@wolframtek.de?subject=Ghosts%20in%20the%20Code%20media%20request">Media contact</a>
+        <a href="assets/og-image.jpg" download>Promo image</a>
       </div>
     </section>
 
-    <section id="faq" class="section-pad faq-section">
-      <div class="container section-intro centered reveal">
-        <p class="kicker">Reader FAQ</p>
-        <h2>What kind of book is this?</h2>
-      </div>
-      <div class="container faq-grid">
-        <details class="faq-item reveal" open>
-          <summary>Is this memoir, paranormal investigation, or AI ethics?</summary>
-          <p>It is all three, held together as a witness record. The death event begins the book; the field work tests what followed; the AI chapters ask what happens when technology learns to imitate contact.</p>
-        </details>
-        <details class="faq-item reveal">
-          <summary>Is the book asking readers to believe everything?</summary>
-          <p>No. The book distinguishes testimony, anomaly, evidence, and proof. It includes empty nights and limitations because the method matters as much as the mystery.</p>
-        </details>
-        <details class="faq-item reveal">
-          <summary>What is Cindy Kaza’s role?</summary>
-          <p>Cindy Kaza is featured as an important mediumship presence in the story, especially where the investigation moves from private testimony into field work and evidential questions.</p>
-        </details>
-        <details class="faq-item reveal">
-          <summary>Why does AI belong in a book about ghosts?</summary>
-          <p>Because the newest machine is entering the oldest human wound. A simulation of the dead may be useful, comforting, or dangerous, but it must not be mistaken for the thing it imitates without careful testing.</p>
-        </details>
-      </div>
-    </section>
-
-    <section id="updates" class="section-pad updates-section">
-      <div class="container update-box reveal">
-        <div>
-          <p class="kicker">Stay connected</p>
-          <h2>Book updates, media, and launch notices.</h2>
-          <p>Join the update list for publication news, previews, media appearances, and launch announcements.</p>
-        </div>
-        <form class="signup-form" action="mailto:gitc@wolframtek.de" method="post" enctype="text/plain" data-mailto-form>
-          <label for="email">Email address</label>
-          <div class="form-row">
-            <input id="email" name="email" type="email" placeholder="you@example.com" required />
-            <button class="button primary" type="submit">Notify me</button>
-          </div>
-          <div class="contact-row">
-            <a class="button secondary" href="mailto:gitc@wolframtek.de?subject=Ghosts%20in%20the%20Code%20contact">Email directly</a>
-          </div>
-          <p class="form-note" data-form-note>This opens your email app and sends the request to <a href="mailto:gitc@wolframtek.de?subject=Ghosts%20in%20the%20Code%20updates">gitc@wolframtek.de</a>.</p>
-        </form>
-      </div>
+    <section class="finale">
+      <p>GHOSTS IN THE CODE</p>
+      <h2>The newest machine asks the oldest question.</h2>
+      <strong>What survives?</strong>
+      <a href="#top">Back to top ↑</a>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <p class="footer-title">Ghosts in the Code</p>
-        <p>By Dr. Stephen Dietrich-Kolokouris feat. Cindy Kaza.</p>
-        <p><a href="mailto:gitc@wolframtek.de?subject=Ghosts%20in%20the%20Code%20contact">gitc@wolframtek.de</a></p>
-      </div>
-      <div>
-        <p class="footer-label">Quick links</p>
-        <a href="#book">Book</a>
-        <a href="#why-different">Why This Book</a>
-        <a href="#archive">Archive</a>
-        <a href="#previews">Previews</a>
-        <a href="#field-file">Field File</a>
-        <a href="#ai-dead">AI and the Dead</a>
-        <a href="#authors">Authors</a>
-        <a href="#media">Media</a>
-        <a href="#faq">FAQ</a>
-        <a href="#updates">Updates</a>
-        <a href="mailto:gitc@wolframtek.de?subject=Ghosts%20in%20the%20Code%20contact">Contact</a>
-        <a href="#top">Back to top</a>
-      </div>
-      <div>
-        <p class="footer-label">Safety note</p>
-        <p>This site discusses paranormal testimony, grief technology, and survival questions. It is not medical, mental-health, or crisis guidance.</p>
-      </div>
-    </div>
+    <div>Ghosts in the Code</div>
+    <div>Dr. Stephen Dietrich-Kolokouris feat. Cindy Kaza</div>
+    <div>Media: gitc@wolframtek.de</div>
   </footer>
 
-  <a class="back-to-top" href="#top" aria-label="Back to top" data-back-to-top>Top</a>
-  <script src="script.js?v=restore1"></script>
-<script>
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.getRegistrations().then(regs => regs.forEach(reg => reg.unregister()));
-  if ('caches' in window) caches.keys().then(keys => keys.forEach(key => caches.delete(key)));
-}
-</script>
+  <script src="script.js?v=cinematic-v2" defer></script>
 </body>
 </html>
