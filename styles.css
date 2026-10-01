@@ -19,7 +19,7 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);f
 img{display:block;max-width:100%}
 a{color:inherit}
 button{font:inherit}
-::selection{background:var(--cyan);color:var(--black)}
+::selection{background:var(--cyan);color:var(--black)}\n:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}\nbutton:focus-visible,a:focus-visible{outline-color:var(--cyan)}
 .skip-link{position:fixed;left:12px;top:-80px;z-index:999;background:#fff;padding:10px 14px}
 .skip-link:focus{top:12px}
 .progress{position:fixed;left:0;right:0;top:0;height:2px;z-index:1000;background:transparent}
